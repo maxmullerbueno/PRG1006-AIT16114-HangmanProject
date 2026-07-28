@@ -5,3 +5,4 @@
 class Player
 private:
 std::string name;
+int attemptsRemaining;
