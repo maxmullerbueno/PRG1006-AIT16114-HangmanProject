@@ -18,5 +18,5 @@ void Player::loseAttempt()
 
 int Player::getAttemptsRemaining()
 {
-
+    return attemptsRemaining;
 }
