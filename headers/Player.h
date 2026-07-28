@@ -2,6 +2,3 @@
 #include <string>
 #include <set>
 
-int main() {
-
-}
