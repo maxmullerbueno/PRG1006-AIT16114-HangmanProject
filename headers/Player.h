@@ -6,3 +6,4 @@ class Player
 private:
 std::string name;
 int attemptsRemaining;
+std::set<char> guessedLetters;
