@@ -8,5 +8,5 @@ void Player::addGuess(char guess)
 
 bool Player::hasGuessed(char guess)
 {
-
+    return guessedLetters.count(guess) > 0;
 }
