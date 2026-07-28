@@ -13,5 +13,5 @@ bool Player::hasGuessed(char guess)
 
 void Player::loseAttempt()
 {
-
+    attemptsRemaining = attemptsRemaining - 1;
 }
