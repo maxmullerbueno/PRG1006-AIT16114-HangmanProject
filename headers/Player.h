@@ -3,3 +3,4 @@
 #include <set>
 
 class Player
+private:
