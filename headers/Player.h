@@ -11,4 +11,5 @@ private:
 
 public:
       void addGuess(char guess);
+      bool hasGuessed(char guess);
 }
