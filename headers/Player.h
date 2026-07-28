@@ -13,4 +13,5 @@ public:
       void addGuess(char guess);
       bool hasGuessed(char guess);
       void loseAttempt();
+      int getAttemptsRemaining();
 }
