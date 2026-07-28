@@ -3,5 +3,6 @@
 
 void Player::addGuess(char guess)
 {
-
+    guessedLetters.insert(guess);
 }
+
