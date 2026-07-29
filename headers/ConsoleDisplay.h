@@ -1,4 +1,11 @@
 #pragma once                               // Prevents multiple inclusion of this header file
 
-#include <string>                          // Provides the std::string class
-#include <set>                             // Provides the std:: set container
+class ConsoleDisplay         // Handles all console output for the game
+{
+public:
+void showWelcome();          // Displays welmcome message
+void showInstructions();     // Displays game instructions
+void showBoard();            // Displays game board
+void showResult();           // Display game result
+void drawHangman();          // Draws the Hangman figure
+}
