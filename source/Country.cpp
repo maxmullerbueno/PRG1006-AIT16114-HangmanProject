@@ -23,3 +23,18 @@ std::string Country::selectRandomCountry() {
     
     return selectedCountry;
 }
+
+// Checks if the guessed letter really exists
+bool Country::checkLetter(char letter) {
+    bool found = false;
+    char lowerLetter = tolower(letter);
+
+    // Reads each character in the repository
+    for (char c : selectedCountry) {
+        if (tolower(c) == lowerLetter) {
+            discoveredLetters.insert(lowerLetter);
+            found = true;
+        }
+    }
+    return found;
+}
