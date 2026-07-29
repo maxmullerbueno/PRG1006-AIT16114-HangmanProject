@@ -17,9 +17,9 @@ countries = "Australia", "Brazil", "Canada", "Cambodia", "France", "China", "Ind
 // Pick it up one country of the list
 std::string Country::selectRandomCountry() {
     
-// rand() generate a number and % garrantees that indice remains the size list
-int indicev = rand() % countries.size();
-selectedCountry = countries[indice];
-
-return selectedCountry;
+    int index = rand() % countries.size();
+    selectedCountry = countries[index];
+    discoveredLetters.clear();
+    
+    return selectedCountry;
 }
