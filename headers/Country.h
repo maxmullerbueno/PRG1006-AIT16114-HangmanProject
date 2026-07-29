@@ -2,3 +2,15 @@
 
 #include <string>                          // Provides the std::string class
 #include <set>                             // Provides the std:: set container
+
+class Country                               
+{
+private:
+      std::string selectRandomCountry();
+      bool::checkLetter(char);
+      bool::isComplete();
+      string::getDisplayWord();
+public:
+
+
+}
