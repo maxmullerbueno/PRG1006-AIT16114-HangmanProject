@@ -1,9 +1,9 @@
 #pragma once                               // Prevents multiple inclusion of this header file
 
-#include <Country.h>                       // Country header
-#include <Player.h>                        // Player header
-#include <ConsoleDisplay.h>                // ConsoleDisplay header
-#include <Game.h>                          // Game header
+#include "Country.h"                       // Country header
+#include "Player.h"                        // Player header
+#include "ConsoleDisplay.h"                // ConsoleDisplay header
+#include "Game.h"                          // Game header
 
 class HangmanGame
 {
