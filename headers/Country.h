@@ -6,11 +6,10 @@
 class Country                               
 {
 private:
+
+public:
       std::string selectRandomCountry();
       bool::checkLetter(char);
       bool::isComplete();
       string::getDisplayWord();
-public:
-
-
 }
