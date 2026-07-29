@@ -38,3 +38,30 @@ bool Country::checkLetter(char letter) {
     }
     return found;
 }
+
+// Verify the whole word if discovered
+bool Country::isComplete() {
+    // If any letter 'c' is missing out from set, isn't complete
+    for (char c : selectedCountry) {
+        if (discoveredLetters.count(tolower(c)) == 0) {
+            return false; 
+        }
+    }
+    return true; 
+}
+
+// Returns hidden word
+std::string Country::getDisplayWord() {
+    std::string displayWord = "";
+
+    for (char c : selectedCountry) {
+        // If the letter 'c' was found, add it. Otherwise, add underscore.
+        if (discoveredLetters.count(tolower(c)) > 0) {
+            displayWord += c;
+        } else {
+            displayWord += '_';
+        }
+        displayWord += ' '; 
+    }
+    return displayWord;
+}
