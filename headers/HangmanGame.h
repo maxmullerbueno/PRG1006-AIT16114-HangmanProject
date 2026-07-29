@@ -2,15 +2,13 @@
 
 class HangmanGame
 {
-
 private:
-Player player;                             
-Country country;                           
-Display consoledisplay;                    
-
+Player player;                             // HangmanGame class
+Country country;                           // Stores the player information
+ConsoleDisplay ConsoleDisplay;             // Stores the selected country      
+ 
 public:
-void play();
-void startGame();
-void reset();
-
+void play();                               // Runs the game
+void startGame();                          // Starts the game
+void reset();                              // Resets the game
 }
