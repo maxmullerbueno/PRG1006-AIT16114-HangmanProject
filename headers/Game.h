@@ -1,4 +1,9 @@
 #pragma once                               // Prevents multiple inclusion of this header file
 
-#include <string>                          // Provides the std::string class
-#include <set>                             // Provides the std:: set container
+class Game                                 // Base class for the game
+{
+public: 
+void play();                               // Starts the game
+void reset();                              // Resets the game
+void exit();                               // Exits the game
+}

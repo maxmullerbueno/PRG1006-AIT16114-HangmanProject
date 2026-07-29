@@ -3,7 +3,7 @@
 #include <string>                          // Provides the std::string class
 #include <set>                             // Provides the std:: set container
 
-class Player                               
+class Player                             
 {
 private:
       std::string name;                    // Stores the player's name
