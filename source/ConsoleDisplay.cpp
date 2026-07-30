@@ -1,11 +1,14 @@
-#include "ConsoleDisplay.h"          // ConsoleDisplay header
+#include "ConsoleDisplay.h"                                     // ConsoleDisplay header
+#include "Country.h"                                            // Country header
+#include "Player.h"                                             // Player header
 using namespace std;
 
-#include <iostream>                  // Input and output
+#include <iostream>                                             // Input and output
 
 // Displays the welcome screen
 void ConsoleDisplay::showWelcome()
 {
+    int option;
     cout << endl;
     cout << "     HANGMAN COUNTRIES       " << endl;
     cout << "      GUESS THE WORLD!       " << endl;
@@ -13,15 +16,17 @@ void ConsoleDisplay::showWelcome()
     cout << endl;
     cout << "[1] Start Game               " << endl;
     cout << "[2] Instructions             " << endl;
-    cout << "[1] Exit Game                " << endl;
+    cout << "[3] Exit Game                " << endl;
     cout << endl;
     cout << "-----------------------------" << endl;
-    cin >> endl "Select your choice:      " << endl;
+    cout << "    Select your choice:      " << endl;
+    cin >> option;
 }
 
 // Displays the instructions
 void ConsoleDisplay::showInstructions()
 {
+    int ENTER;
     cout << "--------------------------------" << endl;
     cout << "          HOW TO PLAY           " << endl;
     cout << "--------------------------------" << endl;
@@ -34,45 +39,47 @@ void ConsoleDisplay::showInstructions()
     cout << endl;
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
+    cin >> ENTER;
 }
 
 // Displays the game board
-void ConsoleDisplay::showBoard(string word, int attempts, string guessed)                 // String to determine word
-{
+void ConsoleDisplay::showBoard()                           
+{    
+
     cout << "--------------------------------" << endl;
     cout << "            HANGMAN             " << endl;
     cout << "--------------------------------" << endl;
 
-    drawHangman();
+    ConsoleDisplay::drawHangman();
 
     cout << "--------------------------------" << endl;
-    cout << "Word: " << word << endl;                      // word determined at line 40
+    cout << "Word: " << country.getDisplayWord() << endl;                     
     cout << "Attempts: " << endl;
-    for (int i = 0; i < attempts; i++)                     // Loop for attemps, int determined at line 40
+    for (int i = 0; i < attemptsRemaining; i++)                     
     {
         cout << "[*]";
     }
     cout << endl;
 
-    cout << "Guessed: " guessed << endl;                   // guessed determined by string at line 40
+    cout << "Guessed: " << endl;                   
     cout << endl;
     cout << "--------------------------------" << endl;
 }
 
 // Displays the result
-void ConsoleDisplay::showResult(bool win, std::string country,
-                                int attemptsRemaining, int stars)
+void ConsoleDisplay::showResult()
 {
+    bool win;                                                   // Game result
+    int stars;                                                  // Performance stars
     cout << endl;
 
-    if (win)
-    {
+    if (win) {
         cout << "-------------------------------" << endl;
         cout << "            HANGMAN            " << endl;
         cout << "-------------------------------" << endl;
         cout << "           *YOU WON*           " << endl;
         cout << endl;
-        cout << "Country: " << country << endl;
+        cout << "Country: " << endl;
         cout << "Attempts remaining: " << attemptsRemaining << endl;
 
         cout << " Performance: ";
@@ -85,16 +92,15 @@ void ConsoleDisplay::showResult(bool win, std::string country,
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
         cout << "-------------------------------" << endl;
-    }
-}
-        else
-        {
+        }
+        
+    else {
         cout << "-------------------------------" << endl;
         cout << "            HANGMAN            " << endl;
         cout << "-------------------------------" << endl;
         cout << "           GAME OVER!          " << endl;
 
-        drawHangman()
+        ConsoleDisplay::drawHangman();
 
         cout << "    Country:  " << country       << endl;
         cout << "    Better luck next time!     " << endl;
@@ -103,4 +109,3 @@ void ConsoleDisplay::showResult(bool win, std::string country,
         cout << "-------------------------------" << endl;
         }
     }
-}

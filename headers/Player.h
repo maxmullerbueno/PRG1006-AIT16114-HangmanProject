@@ -7,9 +7,9 @@ using namespace std;                       // To avoid std::
 class Player                             
 {
 private:
-      string name;                    // Stores the player's name
+      string name;                         // Stores the player's name
       int attemptsRemaining;               // Tracks the number of remaining attempts
-      set<char> guessedLetters;       // Stores unique letters guessed by the player
+      set<char> guessedLetters;            // Stores unique letters guessed by the player
 
 public:
       void addGuess(char guess);           // Adds guessed letter to the player's collection
