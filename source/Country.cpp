@@ -68,5 +68,7 @@ string Country::getDisplayWord() {
     }
     
     return displayWord;
-    
+   string Country::getSelectedCountry() {
+    return selectedCountry;
+} 
 }
