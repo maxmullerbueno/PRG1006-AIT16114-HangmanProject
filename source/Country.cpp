@@ -53,17 +53,20 @@ bool Country::isComplete() {
 }
 
 // Returns hidden word
-std::string Country::getDisplayWord() {
-    std::string displayWord = "";
+string Country::getDisplayWord() {
+    string displayWord = "";
 
     for (char c : selectedCountry) {
         // If the letter 'c' was found, add it. Otherwise, add underscore.
         if (discoveredLetters.count(tolower(c)) > 0) {
             displayWord += c;
-        } else {
+        } 
+        else {
             displayWord += '_';
         }
         displayWord += ' '; 
     }
+    
     return displayWord;
+    
 }

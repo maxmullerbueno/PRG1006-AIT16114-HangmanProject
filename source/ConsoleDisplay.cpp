@@ -95,8 +95,8 @@ void ConsoleDisplay::showResult()                                 // Displays th
         cout << "           GAME OVER!          " << endl;
 
         ConsoleDisplay::drawHangman();
-
-        cout << "    Country:  " << country->SelectedCountry() << endl;
+        
+        cout << "    Country:  " << country->getSelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;

@@ -17,4 +17,5 @@ public:
       bool checkLetter(char);              // Checks if a guessed letters exists
       bool isComplete();                   // Checks if the whole word has been discovered
       string getDisplayWord();             // Returns the word to display to the player
+      string getSelectedCountry();         // Returns the selected country
 };
