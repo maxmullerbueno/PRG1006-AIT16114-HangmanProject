@@ -13,7 +13,6 @@ ConsoleDisplay(Country* country, Player* player);   // Constructor: links the po
     this->player = player;                          // Links the player pointer to the actual Player object
 }
 
-
 void showWelcome();                                 // Displays welmcome message
 void showInstructions();                            // Displays game instructions
 void showBoard();                                   // Displays game board
