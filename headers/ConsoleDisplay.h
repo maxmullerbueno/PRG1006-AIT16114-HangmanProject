@@ -18,4 +18,5 @@ void showInstructions();                            // Displays game instruction
 void showBoard();                                   // Displays game board
 void showResult();                                  // Display game result
 void drawHangman();                                 // Draws the Hangman figure
+string getSelectedCountry();                        // Returns the selected country
 };
