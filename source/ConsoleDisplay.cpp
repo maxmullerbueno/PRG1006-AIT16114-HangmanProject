@@ -64,9 +64,12 @@ void ConsoleDisplay::showBoard()                                   // Displays t
     }
     cout << endl;
 
-    cout << "Guessed: " <<  << endl;                   
-    cout << endl;
+    cout << "Guessed: ";
+    for (char letter : player->getGuessedLetters()) {
+    cout << letter;
+    cout << endl;                  
     cout << "--------------------------------" << endl;
+    }
 }
 
 void ConsoleDisplay::showResult()                                  // Displays the result
