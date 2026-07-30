@@ -16,4 +16,4 @@ public:
 void play();                               // Runs the game
 void startGame();                          // Starts the game
 void reset();                              // Resets the game
-}
+};
