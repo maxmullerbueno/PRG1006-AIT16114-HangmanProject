@@ -8,4 +8,4 @@ void showInstructions();                   // Displays game instructions
 void showBoard();                          // Displays game board
 void showResult();                         // Display game result
 void drawHangman();                        // Draws the Hangman figure
-}
+};
