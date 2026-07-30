@@ -1,11 +1,17 @@
-#include "ConsoleDisplay.h"                                     // ConsoleDisplay header
-#include "Country.h"                                            // Country header
-#include "Player.h"                                             // Player header
+#include "ConsoleDisplay.h"                                       // ConsoleDisplay header
+#include "Country.h"                                              // Country header
+#include "Player.h"                                               // Player header
 using namespace std;
 
-#include <iostream>                                             // Input and output
+#include <iostream>                                               // Input and output
 
-void ConsoleDisplay::showWelcome()                              // Displays welcome screen
+ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  // Constructor: links the pointers to real objects
+{
+    this->country = country;
+    this->player = player;
+}
+
+void ConsoleDisplay::showWelcome()                                // Displays welcome screen
 {
     int option;
     cout << endl;
@@ -22,7 +28,7 @@ void ConsoleDisplay::showWelcome()                              // Displays welc
     cin >> option;
 }
 
-void ConsoleDisplay::showInstructions()                          // Displays the instructions
+void ConsoleDisplay::showInstructions()                            // Displays the instructions
 {
     int ENTER;
     cout << "--------------------------------" << endl;
@@ -40,7 +46,7 @@ void ConsoleDisplay::showInstructions()                          // Displays the
     cin >> ENTER;
 }
 
-void ConsoleDisplay::showBoard()                                 // Displays the game board
+void ConsoleDisplay::showBoard()                                   // Displays the game board
 {    
 
     cout << "--------------------------------" << endl;
@@ -63,11 +69,10 @@ void ConsoleDisplay::showBoard()                                 // Displays the
     cout << "--------------------------------" << endl;
 }
 
-void ConsoleDisplay::showResult()                                 // Displays the result
+void ConsoleDisplay::showResult()                                   // Displays the result
 {
-    cout << endl;
-
-    if (win) {
+        if ( country->isComplete() ) {
+        cout << endl;
         cout << "-------------------------------" << endl;
         cout << "            HANGMAN            " << endl;
         cout << "-------------------------------" << endl;
@@ -75,7 +80,6 @@ void ConsoleDisplay::showResult()                                 // Displays th
         cout << endl;
         cout << "Country: " << country->getDisplayWord() << endl;
         cout << "Attempts remaining: " << player->getAttemptsRemaining() << endl;
-
         cout << " Performance: ";
         for (int i = 0; i < stars; i++)
         {
@@ -86,8 +90,8 @@ void ConsoleDisplay::showResult()                                 // Displays th
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
         cout << "-------------------------------" << endl;
-        }
-        
+    }
+}
     else {
         cout << "-------------------------------" << endl;
         cout << "            HANGMAN            " << endl;
@@ -95,7 +99,7 @@ void ConsoleDisplay::showResult()                                 // Displays th
         cout << "           GAME OVER!          " << endl;
 
         ConsoleDisplay::drawHangman();
-        
+
         cout << "    Country:  " << country->getSelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
         cout << "-------------------------------" << endl;
@@ -103,3 +107,4 @@ void ConsoleDisplay::showResult()                                 // Displays th
         cout << "-------------------------------" << endl;
         }
     }
+}
