@@ -102,3 +102,5 @@ void ConsoleDisplay::showResult(bool win, std::string country,
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
         cout << "-------------------------------" << endl;
         }
+    }
+}
