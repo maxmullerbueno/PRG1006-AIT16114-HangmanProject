@@ -69,9 +69,9 @@ void ConsoleDisplay::showBoard()                                   // Displays t
     cout << "--------------------------------" << endl;
 }
 
-void ConsoleDisplay::showResult()                                   // Displays the result
+void ConsoleDisplay::showResult()                                  // Displays the result
 {
-        if ( country->isComplete() ) {
+        if (country->isComplete() ) {
         cout << endl;
         cout << "-------------------------------" << endl;
         cout << "            HANGMAN            " << endl;
@@ -81,11 +81,9 @@ void ConsoleDisplay::showResult()                                   // Displays 
         cout << "Country: " << country->getDisplayWord() << endl;
         cout << "Attempts remaining: " << player->getAttemptsRemaining() << endl;
         cout << " Performance: ";
-        for (int i = 0; i < stars; i++)
-        {
-            cout << "*";
+        for (int i = 0; i < stars; i++) {
+            cout << "*" << "^_^" << endl;
         }
-        cout << "  ^_^" << endl;
 
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;

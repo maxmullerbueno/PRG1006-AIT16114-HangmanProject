@@ -22,9 +22,9 @@ int main() {
 
     display.showResult(); {
         true;
-        country.selectedCountry();
+        country.getSelectedCountry();
         player.getAttemptsRemaining();
     }
-  }
     return 0;
+  }
 }
