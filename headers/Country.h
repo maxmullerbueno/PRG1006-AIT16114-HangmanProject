@@ -1,6 +1,6 @@
 #pragma once                               // Prevents multiple inclusion of this header file
 #include <iostream>                        // Permits Inputs and Outputs
-using namespace std;
+using namespace std;                       // To avoid std:: or string::
 
 #include <string>                          // Provides the std::string class
 #include <vector>                          // Provides list of countries
