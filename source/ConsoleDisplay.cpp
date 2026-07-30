@@ -57,7 +57,7 @@ void ConsoleDisplay::showBoard()
     cout << "Attempts: " << endl;
     for (int i = 0; i < attemptsRemaining; i++)                     
     {
-        cout << "[*]";
+    cout << "[*]";
     }
     cout << endl;
 
