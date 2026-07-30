@@ -69,8 +69,6 @@ void ConsoleDisplay::showBoard()
 // Displays the result
 void ConsoleDisplay::showResult()
 {
-    bool win;                                                   // Game result
-    int stars;                                                  // Performance stars
     cout << endl;
 
     if (win) {
