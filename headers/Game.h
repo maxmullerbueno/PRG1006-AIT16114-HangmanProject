@@ -6,4 +6,4 @@ public:
 void play();                               // Starts the game
 void reset();                              // Resets the game
 void exit();                               // Exits the game
-}
+};

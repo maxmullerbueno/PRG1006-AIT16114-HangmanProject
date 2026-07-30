@@ -8,25 +8,23 @@ using namespace std;
 #include "HangmanGame.h"                                     // HangmanGame header
 #include "Player.h"                                          // Player header
 
-int main()
-{
+int main() {
     Country country;
     Player player;
     ConsoleDisplay display;
 
     display.showWelcome();
     display.showInstructions();
+    display.showBoard(); {
+        country.getDisplayWord();
+        player.getAttemptsRemaining();
+}
 
-    display.showBoard(
-        country.getDisplayWord(),
-        player.getAttemptsRemaining(),
-    );
-
-    display.showResult(
-        true,
-        country.getCountryName(),
-        player.getAttemptsRemaining()
-    );
-
+    display.showResult(); {
+        true;
+        country.selectedCountry();
+        player.getAttemptsRemaining();
+    }
+  }
     return 0;
 }
