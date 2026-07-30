@@ -64,7 +64,7 @@ void ConsoleDisplay::showBoard()                                   // Displays t
     }
     cout << endl;
 
-    cout << "Guessed: " <<player->hasGuessed() << endl;                   
+    cout << "Guessed: " <<  << endl;                   
     cout << endl;
     cout << "--------------------------------" << endl;
 }

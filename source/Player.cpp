@@ -19,3 +19,6 @@ int Player::getAttemptsRemaining()
 {
     return attemptsRemaining;
 }
+set<char> Player::getGuessedLetters() {
+    return guessedLetters;
+}
