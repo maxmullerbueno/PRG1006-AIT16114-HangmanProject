@@ -2,6 +2,10 @@
 
 class ConsoleDisplay                       // Handles all console output for the game
 {
+private:
+Country* country;                          // Pointer to the selected country
+Player* player;                            // Pointer to the player
+
 public:
 void showWelcome();                        // Displays welmcome message
 void showInstructions();                   // Displays game instructions
