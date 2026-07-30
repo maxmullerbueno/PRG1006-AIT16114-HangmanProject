@@ -5,8 +5,7 @@ using namespace std;
 
 #include <iostream>                                             // Input and output
 
-// Displays the welcome screen
-void ConsoleDisplay::showWelcome()
+void ConsoleDisplay::showWelcome()                              // Displays welcome screen
 {
     int option;
     cout << endl;
@@ -23,8 +22,7 @@ void ConsoleDisplay::showWelcome()
     cin >> option;
 }
 
-// Displays the instructions
-void ConsoleDisplay::showInstructions()
+void ConsoleDisplay::showInstructions()                          // Displays the instructions
 {
     int ENTER;
     cout << "--------------------------------" << endl;
@@ -42,8 +40,7 @@ void ConsoleDisplay::showInstructions()
     cin >> ENTER;
 }
 
-// Displays the game board
-void ConsoleDisplay::showBoard()                           
+void ConsoleDisplay::showBoard()                                 // Displays the game board
 {    
 
     cout << "--------------------------------" << endl;
@@ -61,13 +58,12 @@ void ConsoleDisplay::showBoard()
     }
     cout << endl;
 
-    cout << "Guessed: " << endl;                   
+    cout << "Guessed: " <<player->hasGuessed() << endl;                   
     cout << endl;
     cout << "--------------------------------" << endl;
 }
 
-// Displays the result
-void ConsoleDisplay::showResult()
+void ConsoleDisplay::showResult()                                 // Displays the result
 {
     cout << endl;
 
@@ -77,8 +73,8 @@ void ConsoleDisplay::showResult()
         cout << "-------------------------------" << endl;
         cout << "           *YOU WON*           " << endl;
         cout << endl;
-        cout << "Country: " << endl;
-        cout << "Attempts remaining: " << attemptsRemaining << endl;
+        cout << "Country: " << country->getDisplayWord() << endl;
+        cout << "Attempts remaining: " << player->getAttemptsRemaining() << endl;
 
         cout << " Performance: ";
         for (int i = 0; i < stars; i++)
@@ -100,7 +96,7 @@ void ConsoleDisplay::showResult()
 
         ConsoleDisplay::drawHangman();
 
-        cout << "    Country:  " << country       << endl;
+        cout << "    Country:  " << country->SelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
