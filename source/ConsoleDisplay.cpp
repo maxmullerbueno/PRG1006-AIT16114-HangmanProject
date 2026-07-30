@@ -103,6 +103,6 @@ void ConsoleDisplay::showResult()                                  // Displays t
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
         cout << "-------------------------------" << endl;
-    }
+     }
 }
 
