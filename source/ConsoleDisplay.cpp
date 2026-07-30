@@ -58,3 +58,47 @@ void ConsoleDisplay::showBoard(string word, int attempts, string guessed)       
     cout << endl;
     cout << "--------------------------------" << endl;
 }
+
+// Displays the result
+void ConsoleDisplay::showResult(bool win, std::string country,
+                                int attemptsRemaining, int stars)
+{
+    cout << endl;
+
+    if (win)
+    {
+        cout << "-------------------------------" << endl;
+        cout << "            HANGMAN            " << endl;
+        cout << "-------------------------------" << endl;
+        cout << "           *YOU WON*           " << endl;
+        cout << endl;
+        cout << "Country: " << country << endl;
+        cout << "Attempts remaining: " << attemptsRemaining << endl;
+
+        cout << " Performance: ";
+        for (int i = 0; i < stars; i++)
+        {
+            cout << "*";
+        }
+        cout << "  ^_^" << endl;
+
+        cout << "-------------------------------" << endl;
+        cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
+        cout << "-------------------------------" << endl;
+    }
+}
+        else
+        {
+        cout << "-------------------------------" << endl;
+        cout << "            HANGMAN            " << endl;
+        cout << "-------------------------------" << endl;
+        cout << "           GAME OVER!          " << endl;
+
+        drawHangman()
+
+        cout << "    Country:  " << country       << endl;
+        cout << "    Better luck next time!     " << endl;
+        cout << "-------------------------------" << endl;
+        cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
+        cout << "-------------------------------" << endl;
+        }
