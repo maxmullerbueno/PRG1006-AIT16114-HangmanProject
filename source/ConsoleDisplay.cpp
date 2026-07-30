@@ -53,9 +53,9 @@ void ConsoleDisplay::showBoard()
     ConsoleDisplay::drawHangman();
 
     cout << "--------------------------------" << endl;
-    cout << "Word: " << country.getDisplayWord() << endl;                     
+    cout << "Word: " << country->getDisplayWord() << endl;                     
     cout << "Attempts: " << endl;
-    for (int i = 0; i < attemptsRemaining; i++)                     
+    for (int i = 0; i < player->getAttemptsRemaining(); i++)                     
     {
     cout << "[*]";
     }
