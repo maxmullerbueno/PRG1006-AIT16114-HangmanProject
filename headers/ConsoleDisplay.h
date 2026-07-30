@@ -7,7 +7,7 @@ Country* country;                                   // Pointer to the selected c
 Player* player;                                     // Pointer to the player
 
 public:
-ConsoleDisplay(Country* country, Player* player);   // Constructor: links the pointers to real objects
+ConsoleDisplay(Country* country, Player* player)   // Constructor: links the pointers to real objects
 {
     this->country = country;                        // Links the country pointer to the actual Country object
     this->player = player;                          // Links the player pointer to the actual Player object
