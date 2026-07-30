@@ -16,5 +16,4 @@ public:
       bool hasGuessed(char guess);         // Checks if the player has already guessed a letter
       void loseAttempt();                  // Decreases the number of remaining attempts
       int getAttemptsRemaining();          // Returns the number of attempts remaining
-      string getGuessedLetters();          // Returns the letters guessed by the player
 };
