@@ -26,5 +26,4 @@ int main() {
         player.getAttemptsRemaining();
     }
     return 0;
-  }
 }

@@ -89,7 +89,7 @@ void ConsoleDisplay::showResult()                                  // Displays t
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
         cout << "-------------------------------" << endl;
     }
-}
+
     else {
         cout << "-------------------------------" << endl;
         cout << "            HANGMAN            " << endl;
@@ -103,6 +103,6 @@ void ConsoleDisplay::showResult()                                  // Displays t
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
         cout << "-------------------------------" << endl;
-        }
     }
 }
+
