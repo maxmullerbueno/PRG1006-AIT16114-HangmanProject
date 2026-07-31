@@ -11,7 +11,7 @@ ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  // Constructor
     this->player = player;
 }
 
-void ConsoleDisplay::showWelcome()                                // Displays welcome screen
+int ConsoleDisplay::showWelcome()                                // Displays welcome screen
 {
     int option;
     cout << endl;
@@ -26,9 +26,10 @@ void ConsoleDisplay::showWelcome()                                // Displays we
     cout << "-----------------------------" << endl;
     cout << "    Select your choice:      " << endl;
     cin >> option;
+    return option;
 }
 
-void ConsoleDisplay::showInstructions()                            // Displays the instructions
+int ConsoleDisplay::showInstructions()                            // Displays the instructions
 {
     int ENTER;
     cout << "--------------------------------" << endl;
@@ -44,9 +45,10 @@ void ConsoleDisplay::showInstructions()                            // Displays t
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
     cin >> ENTER;
+    return ENTER;
 }
 
-void ConsoleDisplay::showBoard()                                   // Displays the game board
+int ConsoleDisplay::showBoard()                                   // Displays the game board
 {    
 
     cout << "--------------------------------" << endl;
@@ -72,7 +74,7 @@ void ConsoleDisplay::showBoard()                                   // Displays t
     cout << "--------------------------------" << endl;
 }
 
-void ConsoleDisplay::showResult()                                  // Displays the result
+int ConsoleDisplay::showResult()                                  // Displays the result
 {
         if (country->isComplete() ) {
         cout << endl;
