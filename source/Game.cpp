@@ -1,13 +1,13 @@
 #include "Game.h"                     // Game header
 
-void Game::play()                     // Run the game
+int Game::play()                     // Run the game
 {
 }
 
-void Game::reset()                    // Reset the game
+int Game::reset()                    // Reset the game
 {
 }
 
-void Game::exit()                     // Exit the game
+int Game::exit()                     // Exit the game
 {
 }
