@@ -83,9 +83,13 @@ void ConsoleDisplay::showResult()                                  // Displays t
         cout << endl;
         cout << "Country: " << country->getDisplayWord() << endl;
         cout << "Attempts remaining: " << player->getAttemptsRemaining() << endl;
+        
+        // Show performance screen according to the number of attempts remaining
         cout << " Performance: ";
-        for (int i = 0; i < stars; i++) {
-            cout << "*" << "^_^" << endl;
+        if (player->getAttemptsRemaining() >= 5) {
+        cout << "***** " << "^_^" << endl;
+    }
+
         }
 
         cout << "-------------------------------" << endl;
