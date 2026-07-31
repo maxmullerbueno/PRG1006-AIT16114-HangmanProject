@@ -87,7 +87,10 @@ void ConsoleDisplay::showResult()                                  // Displays t
         // Show performance screen according to the number of attempts remaining
         cout << " Performance: ";
         if (player->getAttemptsRemaining() >= 5) {
-        cout << "***** " << "^_^" << endl;
+            cout << "***** " << "^_^" << endl;
+        }
+        else if (player->getAttemptsRemaining() >= 3) {
+            cout << "*** " << ":-)" << endl;
     }
 
         }
