@@ -13,17 +13,10 @@ int main() {
     Player player;
     ConsoleDisplay display(&country, &player);
 
+    country.selectRandomCountry();                           // Selects a random country to proceed the game
+
     display.showWelcome();
     display.showInstructions();
-    display.showBoard(); {
-        country.getDisplayWord();
-        player.getAttemptsRemaining();
-}
-
-    display.showResult(); {
-        true;
-        country.getSelectedCountry();
-        player.getAttemptsRemaining();
-    }
+    
     return 0;
 }
