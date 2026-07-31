@@ -23,5 +23,6 @@ set<char> Player::getGuessedLetters() {
     return guessedLetters;
 }
 Player::Player(){                                              // Constructor implementation of number attempts remaining
-    attemptsRemaining = 6;                      
+    attemptsRemaining = 6;    
+    guessedLetters.clear();                  
 }
