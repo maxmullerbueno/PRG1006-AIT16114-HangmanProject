@@ -1,4 +1,6 @@
 #pragma once                                        // Prevents multiple inclusion of this header file
+#include "Player.h"                                 // Player header
+#include "Country.h"                                // Country header
 
 class ConsoleDisplay                                // Handles all console output for the game
 {
