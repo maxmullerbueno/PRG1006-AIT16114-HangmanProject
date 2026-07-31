@@ -21,7 +21,7 @@ void HangmanGame::play()
             // Start Game
             case 1:
             {
-            country.selectRandomCountry();
+            startGame();
             display.showBoard();
             break;
             }
@@ -42,4 +42,8 @@ void HangmanGame::play()
             }
         }
     }
+}
+void HangmanGame::startGame()
+{
+    country.selectRandomCountry();
 }
