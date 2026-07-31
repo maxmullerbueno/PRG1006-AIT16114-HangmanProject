@@ -9,11 +9,20 @@ using namespace std;
 #include "Player.h"                                               // Player header
 
 int main() {
+{
+    HangmanGame game;
+    game.play();
+}
+
+
+
+
+
+
+
     Country country;
     Player player;
     ConsoleDisplay display(&country, &player);                    // Links objects to the Country and Player pointers
-
-    country.selectRandomCountry();                                // Selects a random country to proceed the game
 
     int choice = display.showWelcome();                           // Displays welcome message and return choice
 
