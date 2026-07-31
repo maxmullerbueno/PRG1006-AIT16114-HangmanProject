@@ -15,7 +15,6 @@ int main() {
 
     country.selectRandomCountry();                                // Selects a random country to proceed the game
 
-    display.showWelcome();                                        // Displays welcome message
     int choice = display.showWelcome();                           // Displays welcome message and return choice
 
     if (choice == 1) {                                            // Start the Game
