@@ -1,6 +1,6 @@
 #include "Player.h"
 
-int Player::addGuess(char guess)
+void Player::addGuess(char guess)
 {
     guessedLetters.insert(guess);
 }
@@ -10,12 +10,12 @@ bool Player::hasGuessed(char guess)
     return guessedLetters.count(guess) > 0;
 }
 
-int Player::loseAttempt()
+void Player::loseAttempt()
 {
     attemptsRemaining = attemptsRemaining - 1;
 }
 
-int Player::getAttemptsRemaining()
+void Player::getAttemptsRemaining()
 {
     return attemptsRemaining;
 }
