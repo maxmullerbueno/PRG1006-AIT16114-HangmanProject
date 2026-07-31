@@ -13,13 +13,3 @@ int main() {
     HangmanGame game;
     game.play();
 }
-
-
-
-
-
-
-
-    Country country;
-    Player player;
-    ConsoleDisplay display(&country, &player);                    // Links objects to the Country and Player pointers
