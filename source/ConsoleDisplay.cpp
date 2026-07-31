@@ -29,7 +29,7 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     return choice;
 }
 
-int ConsoleDisplay::showInstructions()                            // Displays the instructions
+void ConsoleDisplay::showInstructions()                            // Displays the instructions
 {
     int ENTER;
     cout << "--------------------------------" << endl;
@@ -45,10 +45,9 @@ int ConsoleDisplay::showInstructions()                            // Displays th
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
     cin >> ENTER;
-    return ENTER;
 }
 
-int ConsoleDisplay::showBoard()                                   // Displays the game board
+void ConsoleDisplay::showBoard()                                   // Displays the game board
 {    
 
     cout << "--------------------------------" << endl;
@@ -74,7 +73,7 @@ int ConsoleDisplay::showBoard()                                   // Displays th
     cout << "--------------------------------" << endl;
 }
 
-int ConsoleDisplay::showResult()                                  // Displays the result
+void ConsoleDisplay::showResult()                                  // Displays the result
 {
         if (country->isComplete() ) {
         cout << endl;

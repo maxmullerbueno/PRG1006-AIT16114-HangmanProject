@@ -13,7 +13,7 @@ Country country;                           // Stores the player information
 ConsoleDisplay display;                    // Stores the selected country      
 
 public:
-int play();                               // Runs the game
-int startGame();                          // Starts the game
-int reset();                              // Resets the game
+void play();                               // Runs the game
+void startGame();                          // Starts the game
+void reset();                              // Resets the game
 };
