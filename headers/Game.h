@@ -3,7 +3,7 @@
 class Game                                 // Base class for the game
 {
 public: 
-void play();                               // Starts the game
-void reset();                              // Resets the game
-void exit();                               // Exits the game
+virtual void play() = 0;                               // Starts the game
+virtual void reset() = 0;                              // Resets the game
+virtual void exit() = 0;                               // Exits the game
 };
