@@ -89,11 +89,12 @@ void ConsoleDisplay::showResult()                                  // Displays t
         if (player->getAttemptsRemaining() >= 5) {
             cout << "***** " << "^_^" << endl;
         }
-        else if (player->getAttemptsRemaining() >= 3) {
-            cout << "*** " << ":-)" << endl;
+            else if (player->getAttemptsRemaining() >= 3) {
+                cout << "*** " << ":-)" << endl;
+            }
+                    else (player->getAttemptsRemaining() >= 1) {
+                        cout << "* " << ":-(" << endl;
     }
-
-        }
 
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again"  "[N] Exit"    << endl;
