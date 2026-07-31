@@ -12,7 +12,7 @@ private:
       set<char> guessedLetters;            // Stores unique letters guessed by the player
 
 public:
-      Player();                            // constructor declaration
+      Player();                            // Constructor declaration
 
       void addGuess(char guess);           // Adds guessed letter to the player's collection
       bool hasGuessed(char guess);         // Checks if the player has already guessed a letter

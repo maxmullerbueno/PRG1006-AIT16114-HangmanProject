@@ -13,7 +13,7 @@ private:
       string selectedCountry;              // Currently selected country
       set<char> discoveredLetters;         // Letters correcntly guessed by the player
 public:
-      Country();                           // constructor declaration
+      Country();                           // Constructor declaration
 
       string selectRandomCountry();        // Selects a random country
       bool checkLetter(char);              // Checks if a guessed letters exists
