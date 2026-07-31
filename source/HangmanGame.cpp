@@ -36,7 +36,7 @@ void HangmanGame::play()
             // Exit game
             case 3:
             {
-            cout << "See you soon!" << endl;
+            cout << " ^_^ Hope to see you soon again! ^_^ " << endl;
             userOption = false;
             break;
             }
