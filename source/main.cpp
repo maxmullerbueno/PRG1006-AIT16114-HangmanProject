@@ -23,17 +23,3 @@ int main() {
     Country country;
     Player player;
     ConsoleDisplay display(&country, &player);                    // Links objects to the Country and Player pointers
-
-    int choice = display.showWelcome();                           // Displays welcome message and return choice
-
-    if (choice == 1) {                                            // Start the Game
-        display.showBoard();                                      // Draws the Hangman figure
-    }
-       else if (choice == 2) {                                    // Display Instructions screen
-            display.showInstructions();
-    }
-                else if (choice == 3) {                           // Exit the game
-                cout << "See you next time. Goodbye!" << endl;
-    }
-    return 0;                                                     // Finishes the program 
-}
