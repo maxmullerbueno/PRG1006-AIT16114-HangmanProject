@@ -92,7 +92,7 @@ void ConsoleDisplay::showResult()                                  // Displays t
             else if (player->getAttemptsRemaining() >= 3) {
                 cout << "*** " << ":-)" << endl;
             }
-                    else (player->getAttemptsRemaining() >= 1) {
+                    else {
                         cout << "* " << ":-(" << endl;
     }
 
