@@ -11,7 +11,7 @@ using namespace std;
 int main() {
     Country country;
     Player player;
-    ConsoleDisplay display;
+    ConsoleDisplay display(&country, &player);
 
     display.showWelcome();
     display.showInstructions();
