@@ -11,12 +11,14 @@ using namespace std;
 int main() {
     Country country;
     Player player;
-    ConsoleDisplay display(&country, &player);
+    ConsoleDisplay display(&country, &player);               // Links objects to the Country and Player pointers
 
     country.selectRandomCountry();                           // Selects a random country to proceed the game
 
-    display.showWelcome();
-    display.showInstructions();
-    
-    return 0;
+    display.showWelcome();                                   // Displays welcome message
+    display.showInstructions();                              // Displays game instructions
+    display.showBoard();                                     // Displays game board
+    display.showResult();                                    // Displays game result
+
+    return 0;                                                // Finishes the program 
 }
