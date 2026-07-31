@@ -7,3 +7,7 @@ HangmanGame::HangmanGame()
       display(&country, &player)
 {
 }
+void HangmanGame::play()
+{
+    int choice = display.showWelcome();
+}
