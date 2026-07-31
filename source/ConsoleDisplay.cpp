@@ -13,7 +13,7 @@ ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  // Constructor
 
 int ConsoleDisplay::showWelcome()                                // Displays welcome screen
 {
-    int option;
+    int choice;
     cout << endl;
     cout << "     HANGMAN COUNTRIES       " << endl;
     cout << "      GUESS THE WORLD!       " << endl;
@@ -25,8 +25,8 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << endl;
     cout << "-----------------------------" << endl;
     cout << "    Select your choice:      " << endl;
-    cin >> option;
-    return option;
+    cin >> choice;
+    return choice;
 }
 
 int ConsoleDisplay::showInstructions()                            // Displays the instructions
