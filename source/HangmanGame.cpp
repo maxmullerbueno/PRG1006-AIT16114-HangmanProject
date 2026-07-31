@@ -1,13 +1,11 @@
 #include "HangmanGame.h"                        // HangamanGame header
 using namespace std;                            // To avoid std::
 
-HangmanGame::HangmanGame()
-    : player(),
-      country(),
-      display(&country, &player)
-{
+// Constructor implementation and initializer list
+HangmanGame::HangmanGame() : player(), country(), display(&country, &player){
 }
-void HangmanGame::play()
-{
+
+// Plays the Hangman game
+void HangmanGame::play() {
     int choice = display.showWelcome();
 }
