@@ -5,7 +5,7 @@
 #include "ConsoleDisplay.h"                // ConsoleDisplay header
 #include "Game.h"                          // Game header
 
-class HangmanGame
+class HangmanGame : public Game            // Derivation class from Game
 {
 private:
 Player player;                             // HangmanGame class
