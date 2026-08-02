@@ -51,8 +51,7 @@ void HangmanGame::startGame()
     bool play = true;
 
     // Looping for the game
-    while (play)
-    {
+    while (play){
         // Display the current state of the game
         display.showBoard();
 
@@ -64,11 +63,11 @@ void HangmanGame::startGame()
         cin >> guess;
 
         // Condition if player has already guessed this letter
-        if (player.hasGuessed(guess))
-        {
+        if (player.hasGuessed(guess)){
         cout << "You already guessed that letter." << endl;
         continue;
         }
+
         // Store the new guessed letter
         player.addGuess(guess);
 
@@ -76,12 +75,23 @@ void HangmanGame::startGame()
         bool correct = country.checkLetter(guess);
 
         // Reduce one attempt in case of incorrect guessed letter
-        if (!correct)
-        {
+        if (!correct){
         player.loseAttempt();
         }
 
         // Display showBoard updated
         display.showBoard();
+
+        // Condition if player has guessed the whole country
+        if (country.isComplete()) {
+        display.showResult();
+        play = false;
+        }
+
+        // Condition if the player has no attempts remaining
+        else if (player.getAttemptsRemaining() == 0){
+        display.showResult();
+        play = false;
+        }
     }
 }
