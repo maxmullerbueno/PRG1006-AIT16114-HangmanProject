@@ -43,8 +43,8 @@ void HangmanGame::play() {
         }
     }
 }
-void HangmanGame::startGame()
-{
+
+void HangmanGame::startGame() {
     // Select a random country to start new game
     country.selectRandomCountry();
     
@@ -91,13 +91,6 @@ void HangmanGame::startGame()
 
         // Condition if the player has no attempts remaining
         else if (player.getAttemptsRemaining() == 0){
-        display.showResult();
-        play = false;
-        }
-
-        // Condition so if player has no attempts remaining
-        else if (player.getAttemptsRemaining() == 0) {
-        {
         display.showResult();
         play = false;
         }
