@@ -26,7 +26,7 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "[3] Exit Game                " << endl;
     cout << endl;
     cout << "-----------------------------" << endl;
-    cout << "    Select your choice:      " << endl;
+    cout << "    Select your choice:      ";
     cin >> choice;
     return choice;
 }
@@ -58,7 +58,7 @@ void ConsoleDisplay::showBoard()                                   // Displays t
 
     cout << "--------------------------------" << endl;
     cout << "Word: " << country->getDisplayWord() << endl;                     
-    cout << "Attempts: " << endl;
+    cout << "Attempts: ";
     for (int i = 0; i < player->getAttemptsRemaining(); i++)                     
     {
     cout << "[*]";
