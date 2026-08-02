@@ -45,7 +45,7 @@ void HangmanGame::play() {
 }
 
 void HangmanGame::startGame() {
-    
+
     // Select a random country to start new game
     country.selectRandomCountry();
     
@@ -96,4 +96,10 @@ void HangmanGame::startGame() {
         play = false;
         }
     }
+}
+
+// Resets game to the beginning
+void HangmanGame::reset(){
+    player = Player();
+    country = Country();
 }
