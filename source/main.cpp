@@ -8,7 +8,7 @@ using namespace std;
 #include "HangmanGame.h"                                          // HangmanGame header
 #include "Player.h"                                               // Player header
 
-int main() {
+int main() 
 {
     HangmanGame game;
     game.play();
