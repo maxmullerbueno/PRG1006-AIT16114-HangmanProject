@@ -3,6 +3,7 @@
 #include "Player.h"                                               // Player header
 using namespace std;
 
+#include <limits>                                                 // Provides numeric limits for data types
 #include <iostream>                                               // Input and output
 
 ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  // Constructor: links the pointers to real objects
@@ -31,7 +32,7 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
 
 void ConsoleDisplay::showInstructions()                            // Displays the instructions
 {
-    int ENTER;
+    string temp;
     cout << "--------------------------------" << endl;
     cout << "          HOW TO PLAY           " << endl;
     cout << "--------------------------------" << endl;
@@ -43,7 +44,6 @@ void ConsoleDisplay::showInstructions()                            // Displays t
     cout << "> Invalid input will be rejected" << endl;
     cout << endl;
     cout << "--------------------------------" << endl;
-    string temp;
     cout << "   Press ENTER to go back...    " << endl;
     cin >> temp;
 }
