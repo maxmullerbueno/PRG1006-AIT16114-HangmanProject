@@ -30,8 +30,8 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cin >> choice;
 }
 
-void ConsoleDisplay::showInstructions()                            // Displays the instructions
-{
+ // Displays the instructions
+void ConsoleDisplay::showInstructions() {
     cout << "--------------------------------" << endl;
     cout << "          HOW TO PLAY           " << endl;
     cout << "--------------------------------" << endl;
@@ -43,12 +43,8 @@ void ConsoleDisplay::showInstructions()                            // Displays t
     cout << "> Invalid input will be rejected" << endl;
     cout << endl;
     cout << "--------------------------------" << endl;
-    void press_any_key();
-    {
     cout << "   Press ENTER to go back...    " << endl;
-    string temp;
-    getline(std::cin, temp);
-    }
+    getchar(); 
 }
 
 void ConsoleDisplay::showBoard()                                   // Displays the game board
