@@ -46,18 +46,23 @@ void HangmanGame::startGame()
 {
     // Select a random country to start new game
     country.selectRandomCountry();
+    
     // Keep the game running until the player wins or loses
     bool play = true;
+
     // Looping for the game
     while (play)
     {
         // Display the current state of the game
         display.showBoard();
+
         // Reading for player guessed letter
         char guess;
+
         // Input a letter for player to guess
         cout << "Enter a letter: ";
         cin >> guess;
+
         // Condition if player has already guessed this letter
         if (player.hasGuessed(guess))
         {
