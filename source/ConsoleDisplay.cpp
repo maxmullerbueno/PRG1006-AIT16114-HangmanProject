@@ -24,7 +24,7 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "[3] Exit Game                " << endl;
     cout << endl;
     cout << "-----------------------------" << endl;
-    cout << "    Select your choice: " << " " << endl;
+    cout << "    Select your choice: " << " ";
     cin >> choice;
     return choice;
 }
