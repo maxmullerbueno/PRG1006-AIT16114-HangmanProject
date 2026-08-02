@@ -6,13 +6,14 @@ HangmanGame::HangmanGame() : player(), country(), display(&country, &player){
 }
 
 // Plays the Hangman game
-void HangmanGame::play() 
-{
+void HangmanGame::play() {
+    // Starts game and handles user input for game options
     bool userOption = true;
 
-    while (userOption)
-    {
+    // Looping for the game
+    while (userOption) {
         
+    // Display welcome screen and get choices for the user  
     int choice = display.showWelcome();
     
     // Switch statement for user's guidance
@@ -90,6 +91,19 @@ void HangmanGame::startGame()
 
         // Condition if the player has no attempts remaining
         else if (player.getAttemptsRemaining() == 0){
+        display.showResult();
+        play = false;
+        }
+
+        // Condition so if player has guessed the whole country or has no attempts remaining
+        if (country.isComplete()) {
+        display.showResult();
+        play = false;
+        }
+
+        // Condition so if player has no attempts remaining
+        else if (player.getAttemptsRemaining() == 0){
+        {
         display.showResult();
         play = false;
         }
