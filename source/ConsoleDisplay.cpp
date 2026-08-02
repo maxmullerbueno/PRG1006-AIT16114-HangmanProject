@@ -43,8 +43,9 @@ void ConsoleDisplay::showInstructions()                            // Displays t
     cout << "> Invalid input will be rejected" << endl;
     cout << endl;
     cout << "--------------------------------" << endl;
+    string temp;
     cout << "   Press ENTER to go back...    " << endl;
-    cin >> ENTER;
+    cin >> temp;
 }
 
 void ConsoleDisplay::showBoard()                                   // Displays the game board
