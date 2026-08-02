@@ -5,6 +5,7 @@ using namespace std;
 
 #include <limits>                                                 // Provides numeric limits for data types
 #include <iostream>                                               // Input and output
+#include <string>                                                 // Provides the std::string class
 
 ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  // Constructor: links the pointers to real objects
 {
