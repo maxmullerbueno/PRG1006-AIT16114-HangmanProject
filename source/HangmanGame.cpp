@@ -15,25 +15,27 @@ void HangmanGame::play() {
         
     // Display welcome screen and get choices for the user  
     int choice = display.showWelcome();
+
+    cin >> choice;
     
     // Switch statement for user's guidance
-        switch (choice)
-        {
-            // Start Game
+        switch (choice)  {
+
+            // Case 1 for starting game
             case 1:
             {
             startGame();
             break;
             }
 
-            // Instructions screen
+            // Case 2 to display instructions screen
             case 2:
             {
             display.showInstructions();
             break;
             }
             
-            // Exit game
+            // Case 3 for exiting game screen
             case 3:
             {
             cout << "-------------------------------" << endl;
