@@ -23,6 +23,9 @@ string Country::selectRandomCountry() {
     selectedCountry = countries[index];
     discoveredLetters.clear();
     
+    // Test to verify if the random country is selected correctly
+    cout << "DEBUG: " << selectedCountry << endl;
+
     return selectedCountry;
 }
 
