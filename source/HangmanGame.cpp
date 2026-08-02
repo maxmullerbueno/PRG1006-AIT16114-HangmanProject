@@ -22,7 +22,6 @@ void HangmanGame::play()
             case 1:
             {
             startGame();
-            display.showBoard();
             break;
             }
 
