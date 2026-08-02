@@ -28,6 +28,7 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "-----------------------------" << endl;
     cout << "    Select your choice:      " << endl;
     cin >> choice;
+    return choice;
 }
 
  // Displays the instructions
