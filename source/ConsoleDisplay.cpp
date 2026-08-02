@@ -44,10 +44,6 @@ void ConsoleDisplay::showInstructions() {
     cout << endl;
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
-
-    cin.clear();
-    cin.ignore(10000, '\n');
-    cin.get();
 }
 
 void ConsoleDisplay::showBoard()                                   // Displays the game board
