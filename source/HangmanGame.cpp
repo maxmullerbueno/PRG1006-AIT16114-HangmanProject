@@ -95,14 +95,8 @@ void HangmanGame::startGame()
         play = false;
         }
 
-        // Condition so if player has guessed the whole country or has no attempts remaining
-        if (country.isComplete()) {
-        display.showResult();
-        play = false;
-        }
-
         // Condition so if player has no attempts remaining
-        else if (player.getAttemptsRemaining() == 0){
+        else if (player.getAttemptsRemaining() == 0) {
         {
         display.showResult();
         play = false;
