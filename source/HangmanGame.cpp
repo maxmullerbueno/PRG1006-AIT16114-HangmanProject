@@ -58,5 +58,13 @@ void HangmanGame::startGame()
         // Input a letter for player to guess
         cout << "Enter a letter: ";
         cin >> guess;
+        // Condition if player has already guessed this letter
+        if (player.hasGuessed(guess))
+        {
+        cout << "You already guessed that letter." << endl;
+        continue;
+        }
+        // Store the new guessed letter
+        player.addGuess(guess);
     }
 }
