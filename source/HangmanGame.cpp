@@ -74,11 +74,14 @@ void HangmanGame::startGame()
 
         // Condition if guessed letter exists in the selected country
         bool correct = country.checkLetter(guess);
-        
+
         // Reduce one attempt in case of incorrect guessed letter
         if (!correct)
         {
         player.loseAttempt();
         }
+
+        // Display showBoard updated
+        display.showBoard();
     }
 }
