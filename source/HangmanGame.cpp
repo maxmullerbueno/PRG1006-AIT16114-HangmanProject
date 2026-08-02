@@ -71,5 +71,8 @@ void HangmanGame::startGame()
         }
         // Store the new guessed letter
         player.addGuess(guess);
+
+        // Condition if guessed letter exists in the selected country
+        bool correct = country.checkLetter(guess);
     }
 }
