@@ -44,7 +44,6 @@ void ConsoleDisplay::showInstructions() {
     cout << endl;
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
-    getchar(); 
 }
 
 void ConsoleDisplay::showBoard()                                   // Displays the game board
