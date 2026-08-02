@@ -14,7 +14,7 @@ ConsoleDisplay display;                    // Stores the selected country
 
 public:
 HangmanGame();                             // Constructor declaration
-void play();                               // Runs the game
+void play() override;                               // Runs the game
 void startGame();                          // Starts the game
-void reset();                              // Resets the game
+void reset() override;                              // Resets the game
 };
