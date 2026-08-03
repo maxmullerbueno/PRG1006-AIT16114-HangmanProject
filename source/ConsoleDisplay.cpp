@@ -36,8 +36,8 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     return choice;
 }
 
- // Displays the instructions screen
-void ConsoleDisplay::showInstructions() {
+    // Displays the instructions screen
+    void ConsoleDisplay::showInstructions() {
     cout << "--------------------------------" << endl;
     cout << "          HOW TO PLAY           " << endl;
     cout << "--------------------------------" << endl;
@@ -50,17 +50,11 @@ void ConsoleDisplay::showInstructions() {
     cout << endl;
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
-
-    pressEnterToContinue();
-    // Player presses ENTER to go back to the welcome screen
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    cin.get();
+    
+    // Verify option for ENTER *******
 }
 
-void pressEnterToContinue() {
-}
-
-void ConsoleDisplay::showBoard()                                   // Displays the game board
+    void ConsoleDisplay::showBoard()                                   // Displays the game board
 {    
     cout << "--------------------------------" << endl;
     cout << "            HANGMAN             " << endl;
