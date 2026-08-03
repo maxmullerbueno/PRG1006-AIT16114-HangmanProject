@@ -8,15 +8,13 @@ using namespace std;
 #include <string>                                                       // Provides the std::string class
 
 // Constructor: links the pointers to real objects
-ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  
-{
+ConsoleDisplay::ConsoleDisplay(Country* country, Player* player) {
     this->country = country;
     this->player = player;
 }
 
 // Displays welcome screen
-int ConsoleDisplay::showWelcome()                            
-{
+int ConsoleDisplay::showWelcome() {
     cout << endl;
     cout << "     HANGMAN COUNTRIES       " << endl;
     cout << "      GUESS THE WORLD!       " << endl;
@@ -76,8 +74,7 @@ int ConsoleDisplay::showWelcome()
 }
 
 // Displays the game board
-    void ConsoleDisplay::showBoard()                              
-{    
+    void ConsoleDisplay::showBoard() {    
     cout << "--------------------------------" << endl;
     cout << "            HANGMAN             " << endl;
     cout << "--------------------------------" << endl;
@@ -87,12 +84,15 @@ int ConsoleDisplay::showWelcome()
     cout << "--------------------------------" << endl;
     cout << "Word: " << country->getDisplayWord() << endl;                     
     cout << "Attempts: ";
+
+    // For Loop to display number of attempts remaining as [*] for the player
     for (int i = 0; i < player->getAttemptsRemaining(); i++) {
     cout << "[*]";
     }
     cout << endl;
-
     cout << "Guessed: ";
+
+    // For Loop to display the letters guessed by the player
     for (char letter : player->getGuessedLetters()) {
     cout << letter;
     }
@@ -101,7 +101,9 @@ int ConsoleDisplay::showWelcome()
 }
 
 // Displays the screen result
-void ConsoleDisplay::showResult() {                               
+void ConsoleDisplay::showResult() {  
+    
+        // Condition in case of player winning the game
         if (country->isComplete() ) {
         cout << endl;
         cout << "-------------------------------" << endl;
@@ -129,10 +131,10 @@ void ConsoleDisplay::showResult() {
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
-    }
+        }
 
-    // Condition in case of game over
-    else {
+        // Condition in case of game over
+        else {
         cout << "-------------------------------" << endl;
         cout << "            HANGMAN            " << endl;
         cout << "-------------------------------" << endl;
@@ -142,15 +144,40 @@ void ConsoleDisplay::showResult() {
 
         cout << "    Country:  " << country->getSelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
+
+        // Prompt for player choosing to play again or exit the game
+        char playAgain;
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
-        
+        cin >> playAgain;
+
+        // Condition to check if the player wants to play again or exit the game
+        if (playAgain == 'Y' || playAgain == 'y') {
+            cout << "Starting a new game..." << endl;
+            cout << endl;
+            cout << endl;
+        }
+
+        // Condition to check if the player wants to exit the game
+        else if (playAgain == 'N' || playAgain == 'n') {
+            cout << "Thank you for playing!" << endl;
+            cout << "See you next time! ^_^" << endl;
+            cout << endl;
+            cout << endl;
+        }
+
+        // Condition to handle invalid input for play again or exit
+        else {
+            cout << "Sorry, input is invalid, please try again." << endl;
+            cout << endl;
+            cout << endl;
+        }
     }
 }
 
-    // function to progressively draw the hangman
-void ConsoleDisplay::drawHangman() {
+        // function to progressively draw the hangman
+        void ConsoleDisplay::drawHangman() {
 
         // Get the number of attempts remaining from the player
         int loseAttempt = player->getAttemptsRemaining();
