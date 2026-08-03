@@ -15,8 +15,6 @@ void HangmanGame::play() {
         
     // Display welcome screen and get choices for the user  
     int choice = display.showWelcome();
-
-    cin >> choice;
     
     // Switch statement for user's guidance
         switch (choice)  {
