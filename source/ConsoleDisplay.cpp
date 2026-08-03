@@ -15,9 +15,7 @@ ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  // Constructor
 
 int ConsoleDisplay::showWelcome()                                // Displays welcome screen
 {
-    // Cleaning the console screen
-    system("clear");
-
+    // Display choices for the player at the welcome screen
     int choice;
     cout << endl;
     cout << "     HANGMAN COUNTRIES       " << endl;
@@ -31,11 +29,14 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "-----------------------------" << endl;
     cout << "    Select your choice:      ";
     
+    // Player inputs his choice
     cin >> choice;
+
+    // input validation for player's choice
     return choice;
 }
 
- // Displays the instructions
+ // Displays the instructions screen
 void ConsoleDisplay::showInstructions() {
     cout << "--------------------------------" << endl;
     cout << "          HOW TO PLAY           " << endl;
@@ -50,9 +51,9 @@ void ConsoleDisplay::showInstructions() {
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
 
-    string temp;
-
-
+    // Player presses ENTER to go back to the welcome screen
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.get();
 }
 
 void ConsoleDisplay::showBoard()                                   // Displays the game board
