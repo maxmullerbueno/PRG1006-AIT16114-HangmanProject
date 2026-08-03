@@ -28,16 +28,14 @@ int ConsoleDisplay::showWelcome()
     cout << endl;
     cout << "-----------------------------" << endl;
     cout << "    Select your choice:      ";
-    
 
     // Display choices for the player at the welcome screen
-    int choice;
+    int choice = 1;
+    int choice = 2;
+    int choice = 3;
 
     // Player inputs his choice
     cin >> choice;
-
-    // Input validation for player's choice
-    return choice;
 
     // Condition to check if the input is valid
     if (cin.fail()){
@@ -50,6 +48,9 @@ int ConsoleDisplay::showWelcome()
 
     // Display error message for invalid input
     cout << "Sorry, choice is invalid :-(, please try again." << endl;
+
+    // Input validation for player's choice
+    return choice;
     }  
 } 
 
