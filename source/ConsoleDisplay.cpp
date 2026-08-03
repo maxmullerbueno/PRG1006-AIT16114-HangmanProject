@@ -16,7 +16,7 @@ ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  // Constructor
 int ConsoleDisplay::showWelcome()                                // Displays welcome screen
 {
     // Cleaning the console screen
-    system("cls");
+    system("clear");
 
     int choice;
     cout << endl;
