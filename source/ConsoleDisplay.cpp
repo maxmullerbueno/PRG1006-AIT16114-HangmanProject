@@ -106,7 +106,7 @@ void ConsoleDisplay::showResult()                                  // Displays t
     }
 
         cout << "-------------------------------" << endl;
-        cout <<   "[Y] Play Again" << " " <<"[N] Exit" << endl;
+        cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
     }
 
@@ -121,7 +121,7 @@ void ConsoleDisplay::showResult()                                  // Displays t
         cout << "    Country:  " << country->getSelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
         cout << "-------------------------------" << endl;
-        cout <<   "[Y] Play Again" << " " <<"[N] Exit" << endl;
+        cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
      }
 }
