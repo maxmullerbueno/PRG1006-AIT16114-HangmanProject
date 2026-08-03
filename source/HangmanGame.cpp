@@ -62,6 +62,10 @@ void HangmanGame::play() {
             userOption = false;
             break;
             }
+            default: {
+                cout << "Sorry, choice is invalid :-(, please try again." << endl;
+                break;
+            }
         }
     }
 }
