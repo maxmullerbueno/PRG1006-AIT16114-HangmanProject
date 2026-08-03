@@ -47,7 +47,6 @@ void ConsoleDisplay::showInstructions() {
     cout << "   Press ENTER to go back...    " << endl;
 
     string temp;
-    getline(cin >> ws, temp);
 
 
 }
