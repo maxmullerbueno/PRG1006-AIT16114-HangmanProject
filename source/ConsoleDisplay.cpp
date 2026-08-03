@@ -30,9 +30,7 @@ int ConsoleDisplay::showWelcome()
     cout << "    Select your choice:      ";
 
     // Display choices for the player at the welcome screen
-    int choice = 1;
-    int choice = 2;
-    int choice = 3;
+    int choice;
 
     // Player inputs his choice
     cin >> choice;
@@ -49,9 +47,9 @@ int ConsoleDisplay::showWelcome()
     // Display error message for invalid input
     cout << "Sorry, choice is invalid :-(, please try again." << endl;
 
+    }  
     // Input validation for player's choice
     return choice;
-    }  
 } 
 
     // Displays the instructions screen
