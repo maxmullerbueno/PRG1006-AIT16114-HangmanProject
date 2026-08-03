@@ -111,7 +111,7 @@ void ConsoleDisplay::showResult() {
         cout << "-------------------------------" << endl;
         cout << "           *YOU WON*           " << endl;
         cout << endl;
-        cout << "Country: " << country->getDisplayWord() << endl;
+        cout << "Country was: " << country->getDisplayWord() << endl;
         cout << "Attempts remaining: " << player->getAttemptsRemaining() << endl;
         
         // Show performance screen according to the number of attempts remaining
@@ -169,7 +169,7 @@ void ConsoleDisplay::showResult() {
 
         ConsoleDisplay::drawHangman();
 
-        cout << "    Country:  " << country->getSelectedCountry() << endl;
+        cout << "    Country was:  " << country->getSelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
 
         // Prompt for player choosing to play again or exit the game
