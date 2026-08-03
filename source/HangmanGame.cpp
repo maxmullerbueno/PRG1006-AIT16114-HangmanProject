@@ -29,15 +29,24 @@ void HangmanGame::play() {
             // Case 2 to display instructions screen
             case 2:
             {
+            cout << endl;
+            cout << endl;
+            cout << endl;
             cout << ">>> Instructions Screen" << endl;
             display.showInstructions();
             cout << ">>> Back to Welcome Screen" << endl;
+            cout << endl;
+            cout << endl;
+            cout << endl;
             break;
             }
             
             // Case 3 for exiting game screen
             case 3:
             {
+            cout << endl;
+            cout << endl;
+            cout << endl;
             cout << "-------------------------------" << endl;
             cout << endl;
             cout << "            HANGMAN            " << endl;
@@ -47,6 +56,9 @@ void HangmanGame::play() {
             cout << " ^_^ Hope to see you soon! ;-) " << endl;
             cout << endl;
             cout << "-------------------------------" << endl;
+            cout << endl;
+            cout << endl;
+            cout << endl;
             userOption = false;
             break;
             }
