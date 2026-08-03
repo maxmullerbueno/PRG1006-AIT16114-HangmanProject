@@ -119,9 +119,3 @@ void HangmanGame::startGame() {
         }
     }
 }
-
-// Resets game to the beginning
-void HangmanGame::reset(){
-    player = Player();
-    country = Country();
-}

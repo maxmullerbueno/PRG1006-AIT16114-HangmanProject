@@ -31,7 +31,6 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "-----------------------------" << endl;
     cout << "    Select your choice:      ";
     
-    cin.clear();
     cin >> choice;
     return choice;
 }
