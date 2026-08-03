@@ -1,19 +1,21 @@
-#include "ConsoleDisplay.h"                                       // ConsoleDisplay header
-#include "Country.h"                                              // Country header
-#include "Player.h"                                               // Player header
+#include "ConsoleDisplay.h"                                             // ConsoleDisplay header
+#include "Country.h"                                                    // Country header
+#include "Player.h"                                                     // Player header
 using namespace std;
 
-#include <limits>                                                 // Provides numeric limits for data types
-#include <iostream>                                               // Input and output
-#include <string>                                                 // Provides the std::string class
+#include <limits>                                                       // Provides numeric limits for data types
+#include <iostream>                                                     // Input and output
+#include <string>                                                       // Provides the std::string class
 
-ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  // Constructor: links the pointers to real objects
+// Constructor: links the pointers to real objects
+ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)  
 {
     this->country = country;
     this->player = player;
 }
 
-int ConsoleDisplay::showWelcome()                                // Displays welcome screen
+// Displays welcome screen
+int ConsoleDisplay::showWelcome()                            
 {
     // Display choices for the player at the welcome screen
     int choice;
@@ -54,7 +56,8 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     // Verify option for ENTER *******
 }
 
-    void ConsoleDisplay::showBoard()                                   // Displays the game board
+// Displays the game board
+    void ConsoleDisplay::showBoard()                              
 {    
     cout << "--------------------------------" << endl;
     cout << "            HANGMAN             " << endl;
@@ -78,7 +81,8 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "--------------------------------" << endl;
 }
 
-void ConsoleDisplay::showResult() {                                    // Displays the result
+// Displays the screen result
+void ConsoleDisplay::showResult() {                               
         if (country->isComplete() ) {
         cout << endl;
         cout << "-------------------------------" << endl;
@@ -91,6 +95,8 @@ void ConsoleDisplay::showResult() {                                    // Displa
         
         // Show performance screen according to the number of attempts remaining
         cout << " Performance: ";
+
+        // Condition to display performance of the attempts remaining
         if (player->getAttemptsRemaining() >= 5) {
             cout << "***** " << "^_^" << endl;
         }
@@ -106,6 +112,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
         cout << "-------------------------------" << endl;
     }
 
+    // Condition in case of game over
     else {
         cout << "-------------------------------" << endl;
         cout << "            HANGMAN            " << endl;
@@ -140,6 +147,7 @@ void ConsoleDisplay::drawHangman() {
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
+        
         else if (loseAttempt == 5) {
             cout << "           +_____+" << endl;
             cout << "           |     |" << endl;
@@ -150,6 +158,7 @@ void ConsoleDisplay::drawHangman() {
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
+
         else if (loseAttempt == 4) {
             cout << "           +_____+" << endl;
             cout << "           |     |" << endl;
@@ -160,6 +169,7 @@ void ConsoleDisplay::drawHangman() {
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
+
         else if (loseAttempt == 3) {
             cout << "           +_____+" << endl;
             cout << "           |     |" << endl;
@@ -170,6 +180,7 @@ void ConsoleDisplay::drawHangman() {
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
+
         else if (loseAttempt == 2) {
             cout << "           +_____+" << endl;
             cout << "           |     |" << endl;
@@ -180,6 +191,7 @@ void ConsoleDisplay::drawHangman() {
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
+
         else if (loseAttempt == 1) {
             cout << "           +_____+" << endl;
             cout << "           |     |" << endl;
@@ -190,6 +202,7 @@ void ConsoleDisplay::drawHangman() {
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
+
         else if (loseAttempt == 0) {
             cout << "           +_____+" << endl;
             cout << "           |     |" << endl;
