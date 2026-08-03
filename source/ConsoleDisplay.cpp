@@ -131,7 +131,7 @@ void ConsoleDisplay::showResult() {
         // Prompt for player choosing to play again or exit the game
         char playAgain;
         cout << "-------------------------------" << endl;
-        cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
+        cout <<   "     [Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
         cin >> playAgain;
 
@@ -175,7 +175,7 @@ void ConsoleDisplay::showResult() {
         // Prompt for player choosing to play again or exit the game
         char playAgain;
         cout << "-------------------------------" << endl;
-        cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
+        cout <<   "     [Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
         cin >> playAgain;
 
