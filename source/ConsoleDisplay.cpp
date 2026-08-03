@@ -216,8 +216,8 @@ void ConsoleDisplay::drawHangman() {
             cout << "           |     |" << endl;
             cout << "           O     |" << endl;
             cout << "           |     |" << endl;
+            cout << "          / \     |" << endl;
             cout << "          / \    |" << endl;
-            cout << "          /      |" << endl;
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
@@ -227,8 +227,8 @@ void ConsoleDisplay::drawHangman() {
             cout << "           |     |" << endl;
             cout << "           O     |" << endl;
             cout << "            |    |" << endl;
-            cout << "           / \   |" << endl;
-            cout << "           / \   |" << endl;
+            cout << "           / \    |" << endl;
+            cout << "           / \    |" << endl;
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
