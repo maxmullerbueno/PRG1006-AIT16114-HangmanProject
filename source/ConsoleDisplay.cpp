@@ -17,8 +17,6 @@ ConsoleDisplay::ConsoleDisplay(Country* country, Player* player)
 // Displays welcome screen
 int ConsoleDisplay::showWelcome()                            
 {
-    // Display choices for the player at the welcome screen
-    int choice;
     cout << endl;
     cout << "     HANGMAN COUNTRIES       " << endl;
     cout << "      GUESS THE WORLD!       " << endl;
@@ -31,12 +29,29 @@ int ConsoleDisplay::showWelcome()
     cout << "-----------------------------" << endl;
     cout << "    Select your choice:      ";
     
+
+    // Display choices for the player at the welcome screen
+    int choice;
+
     // Player inputs his choice
     cin >> choice;
 
-    // input validation for player's choice
+    // Input validation for player's choice
     return choice;
-}
+
+    // Condition to check if the input is valid
+    if (cin.fail()){
+
+    // Clean errors and ignore invalid input    
+    cin.clear();
+
+    // Discard invalid input from the input buffer
+    cin.ignore(1000,'\n');
+
+    // Display error message for invalid input
+    cout << "Sorry, choice is invalid :-(, please try again." << endl;
+    }  
+} 
 
     // Displays the instructions screen
     void ConsoleDisplay::showInstructions() {
@@ -53,7 +68,6 @@ int ConsoleDisplay::showWelcome()
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
     
-    // Verify option for ENTER *******
 }
 
 // Displays the game board
@@ -147,7 +161,7 @@ void ConsoleDisplay::drawHangman() {
             cout << "                 |" << endl;
             cout << "        =================  " << endl;
         }
-        
+
         else if (loseAttempt == 5) {
             cout << "           +_____+" << endl;
             cout << "           |     |" << endl;
