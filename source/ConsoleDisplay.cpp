@@ -51,9 +51,7 @@ void ConsoleDisplay::showInstructions() {
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
 
-    // Player presses ENTER to go back to the welcome screen
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    cin.get();
+    cout.flush();
 }
 
 void ConsoleDisplay::showBoard()                                   // Displays the game board
