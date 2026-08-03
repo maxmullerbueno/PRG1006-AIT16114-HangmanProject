@@ -60,7 +60,7 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "            HANGMAN             " << endl;
     cout << "--------------------------------" << endl;
 
-    //ConsoleDisplay::drawHangman();
+    ConsoleDisplay::drawHangman();
 
     cout << "--------------------------------" << endl;
     cout << "Word: " << country->getDisplayWord() << endl;                     
@@ -112,7 +112,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
         cout << "-------------------------------" << endl;
         cout << "           GAME OVER!          " << endl;
 
-        //ConsoleDisplay::drawHangman();
+        ConsoleDisplay::drawHangman();
 
         cout << "    Country:  " << country->getSelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
