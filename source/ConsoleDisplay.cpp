@@ -65,8 +65,7 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "--------------------------------" << endl;
     cout << "Word: " << country->getDisplayWord() << endl;                     
     cout << "Attempts: ";
-    for (int i = 0; i < player->getAttemptsRemaining(); i++)                     
-    {
+    for (int i = 0; i < player->getAttemptsRemaining(); i++) {
     cout << "[*]";
     }
     cout << endl;
@@ -79,8 +78,7 @@ int ConsoleDisplay::showWelcome()                                // Displays wel
     cout << "--------------------------------" << endl;
 }
 
-void ConsoleDisplay::showResult()                                  // Displays the result
-{
+void ConsoleDisplay::showResult() {                                    // Displays the result
         if (country->isComplete() ) {
         cout << endl;
         cout << "-------------------------------" << endl;
@@ -101,7 +99,7 @@ void ConsoleDisplay::showResult()                                  // Displays t
             }
                     else {
                         cout << "* " << ":-(" << endl;
-    }
+                    }
 
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
@@ -121,6 +119,5 @@ void ConsoleDisplay::showResult()                                  // Displays t
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
-     }
+    }
 }
-
