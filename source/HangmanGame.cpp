@@ -59,12 +59,6 @@ void HangmanGame::play() {
             userOption = false;
             break;                         
             }
-
-            // Default case for invalid input
-            default: {
-            cout << "Sorry, choice is invalid :-(, please try again." << endl;
-            break;
-            }
             
         }
     }
