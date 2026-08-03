@@ -46,9 +46,8 @@ void ConsoleDisplay::showInstructions() {
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-    cin.get();
+    string temp;
+    getline(cin >> ws, temp);
 
 
 }
