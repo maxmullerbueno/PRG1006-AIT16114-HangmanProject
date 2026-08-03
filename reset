@@ -1,0 +1,78 @@
+[4mclear[24m(1)                                                           User commands                                                          [4mclear[24m(1)
+
+[1mNAME[0m
+       [1mclear [22m- clear the terminal screen
+
+[1mSYNOPSIS[0m
+       [1mclear [22m[[1m-x[22m] [[1m-T [4m[22mterminal-type[24m]
+
+       [1mclear -V[0m
+
+[1mDESCRIPTION[0m
+       [1mclear  [22mclears  your  terminal's  screen and its scrollback buffer, if any.  [1mclear [22mretrieves the terminal type from the environment variable
+       [4mTERM[24m, then consults the [4mterminfo[24m terminal capability database entry for that type to determine how to perform these actions.
+
+       The capabilities to clear the screen and scrollback buffer are named “clear” and “E3”, respectively.  The latter is a [4muser-defined[24m [4mcapabil‐[0m
+       [4mity[24m, applying an extension mechanism introduced in [4mncurses[24m 5.0 (1999).
+
+[1mOPTIONS[0m
+       [1mclear [22mrecognizes the following options.
+
+       [1m-T [4m[22mtype[24m  produces instructions suitable for the terminal [4mtype[24m.  Normally, this option is unnecessary, because the terminal type is inferred
+                from the environment variable [4mTERM[24m.  If this option is specified, [1mclear [22mignores the environment variables  [4mLINES[24m  and  [4mCOLUMNS[24m  as
+                well.
+
+       [1m-V       [22mreports the version of [4mncurses[24m associated with this program and exits with a successful status.
+
+       [1m-x       [22mprevents [1mclear [22mfrom attempting to clear the scrollback buffer.
+
+[1mPORTABILITY[0m
+       Neither IEEE Std 1003.1/The Open Group Base Specifications Issue 7 (POSIX.1-2008) nor X/Open Curses Issue 7 documents [1mclear[22m.
+
+       The  latter  documents [1mtput[22m, which could be used to replace this utility either via a shell script or by an alias (such as a symbolic link)
+       to run [1mtput [22mas [1mclear[22m.
+
+[1mHISTORY[0m
+       A [1mclear [22mcommand using the [4mtermcap[24m database and library appeared in 2BSD (1979).  Eighth Edition Unix (1985) later included it.
+
+       The commercial Unix arm of AT&T adapted a different BSD program ([1mtset[22m) to make a new command, [1mtput[22m, and replaced the [1mclear [22mprogram  with  a
+       shell script that called “[1mtput clear[22m”.
+
+           /usr/bin/tput ${1:+-T$1} clear 2> /dev/null
+           exit
+
+       In 1989, when Keith Bostic revised the BSD [1mtput [22mcommand to make it similar to AT&T's [1mtput[22m, he added a [1mclear [22mshell script as well.
+
+           exec tput clear
+
+       The remainder of the script in each case is a copyright notice.
+
+       In 1995, [4mncurses[24m's [1mclear [22mbegan by adapting BSD's original [1mclear [22mcommand to use [4mterminfo[24m.  The [1mE3 [22mextension came later.
+
+       •   In June 1999, [4mxterm[24m provided an extension to the standard control sequence for clearing the screen.  Rather than clearing just the vis‐
+           ible part of the screen using
+
+               printf '\033[2J'
+
+           one could clear the scrollback buffer as well by using
+
+               printf '\033[[1m3[22mJ'
+
+           instead.  “XTerm Control Sequences” documents this feature as originating with [4mxterm[24m.
+
+       •   A few other terminal emulators adopted it, such as PuTTY in 2006.
+
+       •   In  April 2011, a Red Hat developer submitted a patch to the Linux kernel, modifying its console driver to do the same thing.  Documen‐
+           tation of this change, appearing in Linux 3.0, did not mention [4mxterm[24m, although that program  was  cited  in  the  Red  Hat  bug  report
+           (#683733) motivating the feature.
+
+       •   Subsequently,  more terminal developers adopted the feature.  The next relevant step was to change the [4mncurses[24m [1mclear [22mprogram in 2013 to
+           incorporate this extension.
+
+       •   In 2013, the [1mE3 [22mcapability was not exercised by “[1mtput clear[22m”.  That oversight was addressed in 2016 by reorganizing [1mtput [22mto  share  its
+           logic with [1mclear [22mand [1mtset[22m.
+
+[1mSEE ALSO[0m
+       [1mtput[22m(1), [1mxterm[22m(1), [1mterminfo[22m(5)
+
+ncurses 6.4                                                         2023-12-16                                                            [4mclear[24m(1)

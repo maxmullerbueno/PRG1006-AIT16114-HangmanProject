@@ -119,5 +119,78 @@ void ConsoleDisplay::showResult() {                                    // Displa
         cout << "-------------------------------" << endl;
         cout <<   "[Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
+        
     }
 }
+
+    // function to progressively draw the hangman
+    void drawHangman(int attemptsLeft) {
+
+        // Add your hangman drawing logic here
+        // For simplicity, you can print a static hangman
+        // ASCII art Modify this function to display the
+        // hangman as you like
+        if (attemptsLeft == 6) {
+            cout << "   _____" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+        }
+        else if (attemptsLeft == 5) {
+            cout << "   _____" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |     O" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+        }
+        else if (attemptsLeft == 4) {
+            cout << "   _____" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |     O" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+        }
+        else if (attemptsLeft == 3) {
+            cout << "   _____" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |     O" << endl;
+            cout << "  |    /|" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+        }
+        else if (attemptsLeft == 2) {
+            cout << "   _____" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |     O" << endl;
+            cout << "  |    /|\\" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+        }
+        else if (attemptsLeft == 1) {
+            cout << "   _____" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |     O" << endl;
+            cout << "  |    /|\\" << endl;
+            cout << "  |    /" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+        }
+        else if (attemptsLeft == 0) {
+            cout << "   _____" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |     O" << endl;
+            cout << "  |     /|\\" << endl;
+            cout << "  |     / \\" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+        }
+    }
