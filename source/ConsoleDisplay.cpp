@@ -66,6 +66,12 @@ int ConsoleDisplay::showWelcome()
     cout << endl;
     cout << "--------------------------------" << endl;
     cout << "   Press ENTER to go back...    " << endl;
+
+    // Clear previous input buffer to avoid any issues
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');  
+ 
+    // Wait player to press ENTER
+    cin.get();  
     
 }
 
