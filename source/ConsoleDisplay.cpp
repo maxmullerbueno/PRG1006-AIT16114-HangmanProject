@@ -111,7 +111,7 @@ void ConsoleDisplay::showResult() {
         cout << "-------------------------------" << endl;
         cout << "           *YOU WON*           " << endl;
         cout << endl;
-        cout << "Country was: " << country->getDisplayWord() << endl;
+        cout << "Country: " << country->getDisplayWord() << endl;
         cout << "Attempts remaining: " << player->getAttemptsRemaining() << endl;
         
         // Show performance screen according to the number of attempts remaining
