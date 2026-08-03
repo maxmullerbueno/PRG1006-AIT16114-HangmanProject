@@ -29,7 +29,9 @@ void HangmanGame::play() {
             // Case 2 to display instructions screen
             case 2:
             {
+            cout << ">>> Instructions Screen" << endl;
             display.showInstructions();
+            cout << ">>> Back to Welcome Screen" << endl;
             break;
             }
             
