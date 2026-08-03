@@ -157,79 +157,79 @@ void ConsoleDisplay::drawHangman() {
 
         // drawHangman body based on the number of attempts remaining
         if (loseAttempt == 6) {
-            cout << "           +_____+" << endl;
-            cout << "           |     |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
+            cout << "            +_____+" << endl;
+            cout << "            |     |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
 
         else if (loseAttempt == 5) {
-            cout << "           +_____+" << endl;
-            cout << "           |     |" << endl;
-            cout << "           O     |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
+            cout << "            +_____+" << endl;
+            cout << "            |     |" << endl;
+            cout << "            O     |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
 
         else if (loseAttempt == 4) {
-            cout << "           +_____+" << endl;
-            cout << "           |     |" << endl;
-            cout << "           O     |" << endl;
-            cout << "           |     |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
+            cout << "            +_____+" << endl;
+            cout << "            |     |" << endl;
+            cout << "            O     |" << endl;
+            cout << "            |     |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
 
         else if (loseAttempt == 3) {
-            cout << "           +_____+" << endl;
-            cout << "           |     |" << endl;
-            cout << "           O     |" << endl;
-            cout << "           |     |" << endl;
-            cout << "          /      |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
+            cout << "            +_____+" << endl;
+            cout << "            |     |" << endl;
+            cout << "            O     |" << endl;
+            cout << "            |     |" << endl;
+            cout << "           /      |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
 
         else if (loseAttempt == 2) {
-            cout << "           +_____+" << endl;
-            cout << "           |     |" << endl;
-            cout << "           O     |" << endl;
-            cout << "           |     |" << endl;
-            cout << "          / \    |" << endl;
-            cout << "                 |" << endl;
-            cout << "                 |" << endl;
+            cout << "            +_____+" << endl;
+            cout << "            |     |" << endl;
+            cout << "            O     |" << endl;
+            cout << "            |     |" << endl;
+            cout << "           / \\   |" << endl;
+            cout << "                  |" << endl;
+            cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
 
         else if (loseAttempt == 1) {
-            cout << "           +_____+" << endl;
-            cout << "           |     |" << endl;
-            cout << "           O     |" << endl;
-            cout << "           |     |" << endl;
-            cout << "          / \     |" << endl;
-            cout << "          / \    |" << endl;
-            cout << "                 |" << endl;
+            cout << "            +_____+" << endl;
+            cout << "            |     |" << endl;
+            cout << "            O     |" << endl;
+            cout << "            |     |" << endl;
+            cout << "           / \\   |" << endl;
+            cout << "           /      |" << endl;
+            cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
 
         else if (loseAttempt == 0) {
-            cout << "           +_____+" << endl;
-            cout << "           |     |" << endl;
-            cout << "           O     |" << endl;
-            cout << "            |    |" << endl;
-            cout << "           / \    |" << endl;
-            cout << "           / \    |" << endl;
-            cout << "                 |" << endl;
+            cout << "            +_____+" << endl;
+            cout << "            |     |" << endl;
+            cout << "            O     |" << endl;
+            cout << "             |    |" << endl;
+            cout << "            / \\  |" << endl;
+            cout << "            / \\  |" << endl;
+            cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
     }
