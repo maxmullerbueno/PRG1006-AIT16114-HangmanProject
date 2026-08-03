@@ -148,7 +148,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "          |     |" << endl;
             cout << "          O     |" << endl;
             cout << "                |" << endl;
-            cout << "                |" << endl;
+            cout << "                 |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
@@ -159,7 +159,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "          |     |" << endl;
             cout << "          O     |" << endl;
             cout << "          |     |" << endl;
-            cout << "                |" << endl;
+            cout << "                 |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
@@ -170,7 +170,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "          |     |" << endl;
             cout << "          O     |" << endl;
             cout << "          |     |" << endl;
-            cout << "         /      |" << endl;
+            cout << "         /       |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
@@ -181,7 +181,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "          |     |" << endl;
             cout << "          O     |" << endl;
             cout << "          |     |" << endl;
-            cout << "         / \    |" << endl;
+            cout << "         / \     |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
@@ -192,7 +192,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "          |     |" << endl;
             cout << "          O     |" << endl;
             cout << "          |     |" << endl;
-            cout << "         / \    |" << endl;
+            cout << "         / \     |" << endl;
             cout << "         /      |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
@@ -203,7 +203,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "          |     |" << endl;
             cout << "          O     |" << endl;
             cout << "           |    |" << endl;
-            cout << "          / \   |" << endl;
+            cout << "          / \    |" << endl;
             cout << "          / \   |" << endl;
             cout << "                |" << endl;
             cout << "                |" << endl;
