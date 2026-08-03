@@ -20,15 +20,13 @@ void HangmanGame::play() {
         switch (choice)  {
 
             // Case 1 for starting game
-            case 1:
-            {
+            case 1: {
             startGame();
             break;
             }
 
             // Case 2 to display instructions screen
-            case 2:
-            {
+            case 2: {
             cout << endl;
             cout << endl;
             cout << endl;
@@ -42,8 +40,7 @@ void HangmanGame::play() {
             }
             
             // Case 3 for exiting game screen
-            case 3:
-            {
+            case 3: {
             cout << endl;
             cout << endl;
             cout << endl;
@@ -60,6 +57,8 @@ void HangmanGame::play() {
             cout << endl;
             cout << endl;
             userOption = false;
+
+                // Default case for invalid input
                 default: {
                 cout << "Sorry, choice is invalid :-(, please try again." << endl;
                 break;
