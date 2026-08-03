@@ -124,13 +124,15 @@ void ConsoleDisplay::showResult() {                                    // Displa
 }
 
     // function to progressively draw the hangman
-    void drawHangman(int attemptsLeft) {
+    void ConsoleDisplay::drawHangman() {
 
+        // Get the number of attempts remaining from the player
+        int loseAttempt = player->getAttemptsRemaining();
         // Add your hangman drawing logic here
         // For simplicity, you can print a static hangman
         // ASCII art Modify this function to display the
         // hangman as you like
-        if (attemptsLeft == 6) {
+        if (loseAttempt == 6) {
             cout << "   _____" << endl;
             cout << "  |     |" << endl;
             cout << "  |" << endl;
@@ -139,25 +141,25 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "  |" << endl;
             cout << "  |" << endl;
         }
-        else if (attemptsLeft == 5) {
-            cout << "   _____" << endl;
-            cout << "  |     |" << endl;
-            cout << "  |     O" << endl;
-            cout << "  |" << endl;
-            cout << "  |" << endl;
-            cout << "  |" << endl;
-            cout << "  |" << endl;
-        }
-        else if (attemptsLeft == 4) {
+        else if (loseAttempt == 5) {
             cout << "   _____" << endl;
             cout << "  |     |" << endl;
             cout << "  |     O" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+            cout << "  |" << endl;
+        }
+        else if (loseAttempt == 4) {
+            cout << "   _____" << endl;
+            cout << "  |     |" << endl;
+            cout << "  |     O" << endl;
             cout << "  |     |" << endl;
             cout << "  |" << endl;
             cout << "  |" << endl;
             cout << "  |" << endl;
         }
-        else if (attemptsLeft == 3) {
+        else if (loseAttempt == 3) {
             cout << "   _____" << endl;
             cout << "  |     |" << endl;
             cout << "  |     O" << endl;
@@ -166,7 +168,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "  |" << endl;
             cout << "  |" << endl;
         }
-        else if (attemptsLeft == 2) {
+        else if (loseAttempt == 2) {
             cout << "   _____" << endl;
             cout << "  |     |" << endl;
             cout << "  |     O" << endl;
@@ -175,7 +177,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "  |" << endl;
             cout << "  |" << endl;
         }
-        else if (attemptsLeft == 1) {
+        else if (loseAttempt == 1) {
             cout << "   _____" << endl;
             cout << "  |     |" << endl;
             cout << "  |     O" << endl;
@@ -184,7 +186,7 @@ void ConsoleDisplay::showResult() {                                    // Displa
             cout << "  |" << endl;
             cout << "  |" << endl;
         }
-        else if (attemptsLeft == 0) {
+        else if (loseAttempt == 0) {
             cout << "   _____" << endl;
             cout << "  |     |" << endl;
             cout << "  |     O" << endl;
