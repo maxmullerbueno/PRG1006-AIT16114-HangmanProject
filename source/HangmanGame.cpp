@@ -80,7 +80,7 @@ void HangmanGame::startGame() {
         display.showBoard();
 
         // Reading for player guessed letter
-        char guess;
+        string guess;
 
         // Input a letter for player to guess
         cout << "Enter a letter: ";
@@ -90,16 +90,16 @@ void HangmanGame::startGame() {
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
         // Condition if player has already guessed this letter
-        if (player.hasGuessed(guess)){
+        if (player.hasGuessed(guess[0])) {
         cout << "You already guessed that letter." << endl;
         continue;
         }
 
         // Store the new guessed letter
-        player.addGuess(guess);
+        player.addGuess(guess[0]);
 
         // Condition if guessed letter exists in the selected country
-        bool correct = country.checkLetter(guess);
+        bool correct = country.checkLetter(guess[0]);
 
         // Reduce one attempt in case of incorrect guessed letter
         if (!correct){
