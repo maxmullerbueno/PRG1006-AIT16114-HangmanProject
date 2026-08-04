@@ -106,6 +106,13 @@ void HangmanGame::startGame() {
         if (!correct){
         player.loseAttempt();
         }
+        else {
+            // Entire word guessed correctly, player wins
+            bool guessEntireWord = country.guessEntireWord(guess);
+
+            // Reduce one attempt if guess entire word trial is incorrect
+            if (!guessEntireWord){
+            player.loseAttempt();
     }
 
         // Display showBoard updated
@@ -151,10 +158,6 @@ void HangmanGame::startGame() {
             cout << endl;
             cout << endl;
         }
+    }
 }
 
-// Resets game to the beginning
-void HangmanGame::reset(){
-    player = Player();
-    country = Country();
-}
