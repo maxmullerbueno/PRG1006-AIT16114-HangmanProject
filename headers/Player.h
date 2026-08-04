@@ -14,8 +14,8 @@ private:
 public:
       Player();                            // Constructor declaration
 
-      void addGuess(char guess);           // Adds guessed letter to the player's collection
-      bool hasGuessed(char guess);         // Checks if the player has already guessed a letter
+      void addGuess(string guess);           // Adds guessed letter to the player's collection
+      bool hasGuessed(string guess);         // Checks if the player has already guessed a letter
       void loseAttempt();                  // Decreases the number of remaining attempts
       int getAttemptsRemaining();          // Returns the number of attempts remaining
       set<char> getGuessedLetters();          // Returns the letters guessed by the player

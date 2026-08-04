@@ -1,13 +1,13 @@
 #include "Player.h"
 
-void Player::addGuess(char guess)
+void Player::addGuess(string guess)
 {
-    guessedLetters.insert(guess);
+    guessedLetters.insert(guess[0]);
 }
 
-bool Player::hasGuessed(char guess)
+bool Player::hasGuessed(string guess)
 {
-    return guessedLetters.count(guess) > 0;
+    return guessedLetters.count(guess[0]) > 0;
 }
 
 void Player::loseAttempt()
