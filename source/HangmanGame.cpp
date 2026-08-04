@@ -66,7 +66,6 @@ void HangmanGame::play() {
 }
 
 void HangmanGame::startGame() {
-    reset();
 
     // Select a random country to start new game
     country.selectRandomCountry();
@@ -128,6 +127,7 @@ void HangmanGame::startGame() {
 
         // Condition to check if the player wants to play again or exit the game
         if (playAgain == 'Y' || playAgain == 'y') {
+            reset();
             cout << "Starting a new game..." << endl;
             startGame();
             cout << endl;
