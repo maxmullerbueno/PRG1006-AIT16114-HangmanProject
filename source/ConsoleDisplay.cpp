@@ -206,8 +206,8 @@ void ConsoleDisplay::showResult() {
             cout << "            +_____+" << endl;
             cout << "            |     |" << endl;
             cout << "            O     |" << endl;
-            cout << "            |     |" << endl;
-            cout << "           /      |" << endl;
+            cout << "           /|     |" << endl;
+            cout << "                  |" << endl;
             cout << "                  |" << endl;
             cout << "                  |" << endl;
             cout << "        =================  " << endl;
@@ -217,8 +217,8 @@ void ConsoleDisplay::showResult() {
             cout << "            +_____+" << endl;
             cout << "            |     |" << endl;
             cout << "            O     |" << endl;
-            cout << "            |     |" << endl;
-            cout << "           / \\    |" << endl;
+            cout << "           /|\\   |" << endl;
+            cout << "                  |" << endl;
             cout << "                  |" << endl;
             cout << "                  |" << endl;
             cout << "        =================  " << endl;
@@ -228,9 +228,9 @@ void ConsoleDisplay::showResult() {
             cout << "            +_____+" << endl;
             cout << "            |     |" << endl;
             cout << "            O     |" << endl;
-            cout << "            |     |" << endl;
-            cout << "           / \\    |" << endl;
+            cout << "           /|\\   |" << endl;
             cout << "           /      |" << endl;
+            cout << "                  |" << endl;
             cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
@@ -239,9 +239,9 @@ void ConsoleDisplay::showResult() {
             cout << "            +_____+" << endl;
             cout << "            |     |" << endl;
             cout << "            O     |" << endl;
-            cout << "             |    |" << endl;
-            cout << "            / \\   |" << endl;
-            cout << "            / \\   |" << endl;
+            cout << "            /|\\  |" << endl;
+            cout << "            / \\  |" << endl;
+            cout << "                  |" << endl;
             cout << "                  |" << endl;
             cout << "        =================  " << endl;
         }
