@@ -144,6 +144,9 @@ void ConsoleDisplay::showResult() {
 
         cout << "       Country was:  " << country->getSelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
+        cout << "-------------------------------" << endl;
+        cout << "     [Y] Play Again" << " " << "[N] Exit" << endl;
+        cout << "-------------------------------" << endl;
     }
 }
 

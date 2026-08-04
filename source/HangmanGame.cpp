@@ -128,7 +128,8 @@ void HangmanGame::startGame() {
 
         // Condition to check if the player wants to play again or exit the game
         if (playAgain == 'Y' || playAgain == 'y') {
-            cout << "Starting a new game..." << endl;
+            cout << "Starting a new game... ^_^" << endl;
+            cout << "Wishing you the best of luck!" << endl;
             startGame();
             cout << endl;
             cout << endl;
