@@ -138,7 +138,6 @@ void HangmanGame::startGame() {
         else if (playAgain == 'N' || playAgain == 'n') {
             cout << "Thank you for playing!" << endl;
             cout << "See you next time! ^_^" << endl;
-            exit;
             cout << endl;
             cout << endl;
         }
