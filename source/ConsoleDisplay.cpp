@@ -85,10 +85,22 @@ int ConsoleDisplay::showWelcome() {
     cout << "Word: " << country->getDisplayWord() << endl;                     
     cout << "Attempts: ";
 
-    // For Loop to display number of attempts remaining as [*] for the player
-    for (int i = 0; i < player->getAttemptsRemaining(); i++) {
-    cout << "[*]";
+    // Store number of attempts remaining
+    int attempts = player->getAttemptsRemaining();
+
+    // Display all six attempt slots
+    for (int i = 0; i < 6; i++) {
+
+    // Remaining attempts
+    if (i < attempts) {
+        cout << "[*]";
     }
+
+    // Used attempts
+    else {
+        cout << "[ ]";
+    }
+}
     cout << endl;
     cout << "Guessed: ";
 
