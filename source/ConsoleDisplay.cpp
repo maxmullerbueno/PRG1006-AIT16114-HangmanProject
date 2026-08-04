@@ -127,37 +127,10 @@ void ConsoleDisplay::showResult() {
                     else {
                         cout << "* " << ":-(" << endl;
                     }
-
-        // Prompt for player choosing to play again or exit the game
-        char playAgain;
         cout << "-------------------------------" << endl;
-        cout <<   "     [Y] Play Again" << " " << "[N] Exit" << endl;
+        cout << "     [Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
-        cin >> playAgain;
 
-        // Condition to check if the player wants to play again or exit the game
-        if (playAgain == 'Y' || playAgain == 'y') {
-            void reset();
-            void startGame();
-            cout << "Starting a new game..." << endl;
-            cout << endl;
-            cout << endl;
-        }
-
-        // Condition to check if the player wants to exit the game
-        else if (playAgain == 'N' || playAgain == 'n') {
-            cout << "Thank you for playing!" << endl;
-            cout << "See you next time! ^_^" << endl;
-            cout << endl;
-            cout << endl;
-        }
-
-        // Condition to handle invalid input for play again or exit
-        else {
-            cout << "Sorry, input is invalid, please try again." << endl;
-            cout << endl;
-            cout << endl;
-        }
     }
 
         // Condition in case of game over
@@ -171,37 +144,9 @@ void ConsoleDisplay::showResult() {
 
         cout << "       Country was:  " << country->getSelectedCountry() << endl;
         cout << "    Better luck next time!     " << endl;
-
-        // Prompt for player choosing to play again or exit the game
-        char playAgain;
         cout << "-------------------------------" << endl;
-        cout <<   "     [Y] Play Again" << " " << "[N] Exit" << endl;
+        cout << "     [Y] Play Again" << " " << "[N] Exit" << endl;
         cout << "-------------------------------" << endl;
-        cin >> playAgain;
-
-        // Condition to check if the player wants to play again or exit the game
-        if (playAgain == 'Y' || playAgain == 'y') {
-            void reset();
-            void startGame();
-            cout << "Starting a new game..." << endl;
-            cout << endl;
-            cout << endl;
-        }
-
-        // Condition to check if the player wants to exit the game
-        else if (playAgain == 'N' || playAgain == 'n') {
-            cout << "Thank you for playing!" << endl;
-            cout << "See you next time! ^_^" << endl;
-            cout << endl;
-            cout << endl;
-        }
-
-        // Condition to handle invalid input for play again or exit
-        else {
-            cout << "Sorry, input is invalid, please try again." << endl;
-            cout << endl;
-            cout << endl;
-        }
     }
 }
 
