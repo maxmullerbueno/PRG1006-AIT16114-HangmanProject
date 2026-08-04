@@ -90,29 +90,30 @@ void HangmanGame::startGame() {
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
         if (guess.length() == 1) {
-        // Condition if player has already guessed this letter
-        if (player.hasGuessed(guess)) {
-        cout << "You already guessed that letter." << endl;
-        continue;
-        }
+            // Condition if player has already guessed this letter
+            if (player.hasGuessed(guess)) {
+            cout << "You already guessed that letter." << endl;
+            continue;
+            }
 
-        // Store the new guessed letter
-        player.addGuess(guess);
+            // Store the new guessed letter
+            player.addGuess(guess);
 
-        // Condition if guessed letter exists in the selected country
-        bool correct = country.checkLetter(guess[0]);
+            // Condition if guessed letter exists in the selected country
+            bool correct = country.checkLetter(guess[0]);
 
-        // Reduce one attempt in case of incorrect guessed letter
-        if (!correct){
-        player.loseAttempt();
-        }
-        else {
+            // Reduce one attempt in case of incorrect guessed letter
+            if (!correct){
+            player.loseAttempt();
+            }
+            else {
             // Entire word guessed correctly, player wins
             bool wholeWordCorrect = country.guessEntireWord(guess);
 
             // Reduce one attempt if guess entire word trial is incorrect
             if (!wholeWordCorrect){
             player.loseAttempt();
+        }
     }
 
         // Display showBoard updated
