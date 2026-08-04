@@ -89,14 +89,15 @@ void HangmanGame::startGame() {
         // Clear buffer to avoid multiple inputs
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
+        if (guess.length() == 1) {
         // Condition if player has already guessed this letter
-        if (player.hasGuessed(guess[0])) {
+        if (player.hasGuessed(guess)) {
         cout << "You already guessed that letter." << endl;
         continue;
         }
 
         // Store the new guessed letter
-        player.addGuess(guess[0]);
+        player.addGuess(guess);
 
         // Condition if guessed letter exists in the selected country
         bool correct = country.checkLetter(guess[0]);
@@ -105,6 +106,7 @@ void HangmanGame::startGame() {
         if (!correct){
         player.loseAttempt();
         }
+    }
 
         // Display showBoard updated
         display.showBoard();
