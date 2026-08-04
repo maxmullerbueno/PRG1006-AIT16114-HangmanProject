@@ -20,4 +20,5 @@ public:
       bool isComplete();                   // Checks if the whole word has been discovered
       string getDisplayWord();             // Returns the word to display to the player
       string getSelectedCountry();         // Returns the selected country
+      bool guessEntireWord(string guess);  // Guesses the whole word and checks if it is correct
 };
