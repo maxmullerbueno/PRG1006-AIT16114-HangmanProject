@@ -108,10 +108,10 @@ void HangmanGame::startGame() {
         }
         else {
             // Entire word guessed correctly, player wins
-            bool guessEntireWord = country.guessEntireWord(guess);
+            bool wholeWordCorrect = country.guessEntireWord(guess);
 
             // Reduce one attempt if guess entire word trial is incorrect
-            if (!guessEntireWord){
+            if (!wholeWordCorrect){
             player.loseAttempt();
     }
 
