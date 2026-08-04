@@ -1,5 +1,6 @@
 #include "HangmanGame.h"                        // HangamanGame header
 using namespace std;                            // To avoid std::
+#include <limits>                               // For numeric_limits
 
 // Constructor implementation and initializer list
 HangmanGame::HangmanGame() : player(), country(), display(&country, &player){
@@ -83,6 +84,9 @@ void HangmanGame::startGame() {
         // Input a letter for player to guess
         cout << "Enter a letter: ";
         cin >> guess;
+
+        // Clear buffer to avoid multiple inputs
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
         // Condition if player has already guessed this letter
         if (player.hasGuessed(guess)){
