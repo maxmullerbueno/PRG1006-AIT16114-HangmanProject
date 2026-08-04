@@ -11,18 +11,21 @@ Country::Country()
 srand(time(0));
     
 // Provide list of countries
-countries = {"Australia", "Brazil", "Canada", "Cambodia", "France", "China", "Indonesia", "Colombia", "Chile", "Bahamas", "Mexico", "Germany", 
-    "Portugal", "Spain", "Uruguay", "Paraguay", "Korea", "Japan", "Russia", "South-Africa", "United-States", "New Zeland", "Greece", 
-    "Turkey", "Thailand", "Philippines", "Panama", "England", "Chad", "Ethiopia", "Egypt", "Morroco", "Italy", "Qatar", "Venezuela"};
+countries = {"Australia", "Brazil", "Canada", "Cambodia", "France", "China", "Indonesia", "Colombia", 
+    "Chile", "Bahamas", "Mexico", "Germany", "Portugal", "Spain", "Uruguay", "Paraguay", "Korea", "Japan", 
+    "Russia", "Greece", "Turkey", "Thailand", "Philippines", "Panama", "England", "Chad", "Ethiopia", 
+    "Egypt", "Morroco", "Italy", "Qatar", "Venezuela"};
 }
 
 // Pick it up one country of the list
 string Country::selectRandomCountry() {
     
+    // Provides a random index based of the countries vector size
     int index = rand() % countries.size();
     selectedCountry = countries[index];
     discoveredLetters.clear();
 
+    // Return the selected country
     return selectedCountry;
 }
 
@@ -33,11 +36,13 @@ bool Country::checkLetter(char letter) {
 
     // Reads each character in the repository
     for (char c : selectedCountry) {
+        // 
         if (tolower(c) == lowerLetter) {
             discoveredLetters.insert(lowerLetter);
             found = true;
         }
     }
+    // Return if letter was found or not
     return found;
 }
 
@@ -49,6 +54,7 @@ bool Country::isComplete() {
             return false; 
         }
     }
+    // If all letters are found, the word is complete
     return true; 
 }
 
