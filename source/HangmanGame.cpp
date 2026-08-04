@@ -119,16 +119,13 @@ void HangmanGame::startGame() {
 
     // Prompt for player choosing to play again or exit the game
         char playAgain;
-        cout << "-------------------------------" << endl;
-        cout <<   "     [Y] Play Again" << " " << "[N] Exit" << endl;
-        cout << "-------------------------------" << endl;
         cin >> playAgain;
 
         // Condition to check if the player wants to play again or exit the game
         if (playAgain == 'Y' || playAgain == 'y') {
             void reset();
-            void startGame();
             cout << "Starting a new game..." << endl;
+            void startGame();
             cout << endl;
             cout << endl;
         }
@@ -137,7 +134,7 @@ void HangmanGame::startGame() {
         else if (playAgain == 'N' || playAgain == 'n') {
             cout << "Thank you for playing!" << endl;
             cout << "See you next time! ^_^" << endl;
-            void exit();
+            switch (3);
             cout << endl;
             cout << endl;
         }
