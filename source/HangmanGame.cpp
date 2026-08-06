@@ -90,8 +90,11 @@ void HangmanGame::startGame() {
         // Reading for player guessed letter
         string guess;
 
-        // Input a letter for player to guess
-        cout << "Enter a letter: ";
+        // Input a letter for player to guess                                                                    
+                                                                                     
+        cout << " ██████ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄     ▄▄▄    ▄▄    ▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄    " << endl;  
+        cout << " ██▄▄   ███▄██   ██   ██▄▄  ██▄█▄   ██▀██   ██    ██▄▄    ██     ██   ██▄▄  ██▄█▄ ▀ " << endl;  
+        cout << " ██▄▄▄▄ ██ ▀██   ██   ██▄▄▄ ██ ██   ██▀██   ██▄▄▄ ██▄▄▄   ██     ██   ██▄▄▄ ██ ██ ▄ " << endl;
         cin >> guess;
 
         // Clear buffer to avoid multiple inputs

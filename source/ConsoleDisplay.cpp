@@ -158,18 +158,18 @@ cout <<"                  ██     ██ ██ ██▄▄▄ ▄▄██�
 
     // Remaining attempts
     if (i < attempts) {
-        cout << " ▄▄ ▄ ▄ ▄ ▄▄  ";
-        cout << " █  ▄███▄  █  ";
-        cout << " █  ▄▀█▀▄  █  ";
-        cout << " ▀▀       ▀▀  ";
+        cout << " ▄▄ ▄ ▄ ▄ ▄▄  " << endl;
+        cout << " █  ▄███▄  █  " << endl;
+        cout << " █  ▄▀█▀▄  █  " << endl;
+        cout << " ▀▀       ▀▀  " << endl;
     }
 
     // Used attempts
     else {
-    cout << " ▄▄     ▄▄ ";   
-    cout << " █       █ ";  
-    cout << " █       █ ";   
-    cout << " ▀▀     ▀▀ ";
+    cout << " ▄▄     ▄▄ " << endl;   
+    cout << " █       █ " << endl;  
+    cout << " █       █ " << endl;   
+    cout << " ▀▀     ▀▀ " << endl;
     }
 }
     cout << endl;
@@ -291,198 +291,196 @@ void ConsoleDisplay::showResult() {
         // drawHangman body based on the number of attempts remaining
         if (loseAttempt == 6) {
                                                                                                       
-cout << "                                 ▄                                   ▄                                    " << endl;
-cout << "                               ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
-cout << "                                 █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "         ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
+cout << "                                           ▄                                   ▄                                    " << endl;
+cout << "                                         ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                                           █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                   ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
 
         }
 
         else if (loseAttempt == 5) {
-cout << "                                 ▄                                   ▄                                    " << endl;
-cout << "                               ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
-cout << "                                 █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl;
-cout << "                               ▄████▄                                ██                                   " << endl;
-cout << "                               ██  ██                                ██                                   " << endl;
-cout << "                               ▀████▀                                ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "         ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
+cout << "                                           ▄                                   ▄                                    " << endl;
+cout << "                                         ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                                           █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;
+cout << "                                         ▄████▄                                ██                                   " << endl;
+cout << "                                         ██  ██                                ██                                   " << endl;
+cout << "                                         ▀████▀                                ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                   ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
         }
 
         else if (loseAttempt == 4) {
-cout << "                                 ▄                                   ▄                                    " << endl;
-cout << "                               ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
-cout << "                                 █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
-cout << "                                 ▄▄                                  ▄▄                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl;
-cout << "                               ▄████▄                                ██                                   " << endl;
-cout << "                               ██  ██                                ██                                   " << endl;
-cout << "                               ▀████▀                                ██                                   " << endl;
-cout << "                                 ██                                  ▀▀                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "         ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
+cout << "                                           ▄                                   ▄                                    " << endl;
+cout << "                                         ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                                           █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;l;
+cout << "                                         ▄████▄                                ██                                   " << endl;
+cout << "                                         ██  ██                                ██                                   " << endl;
+cout << "                                         ▀████▀                                ██                                   " << endl;
+cout << "                                           ██                                  ▀▀                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                   ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
         }
 
         else if (loseAttempt == 3) {
                                                                                                       
                                                                                                       
-cout << "                                 ▄                                   ▄                                    " << endl;
-cout << "                               ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
-cout << "                                 █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl;
-cout << "                               ▄████▄                                ██                                   " << endl;
-cout << "                               ██  ██                                ██                                   " << endl;
-cout << "                               ▀████▀                                ██                                   " << endl;
-
-cout << "                               █ ██                                  ██                                   " << endl;
-cout << "                              █  ██                                  ██                                   " << endl;
-cout << "                             █   ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl; 
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "         ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
+cout << "                                           ▄                                   ▄                                    " << endl;
+cout << "                                         ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                                           █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;
+cout << "                                         ▄████▄                                ██                                   " << endl;
+cout << "                                         ██  ██                                ██                                   " << endl;
+cout << "                                         ▀████▀                                ██                                   " << endl;
+cout << "                                                                                                                    " << endl;
+cout << "                                         █ ██                                  ██                                   " << endl;
+cout << "                                        █  ██                                  ██                                   " << endl;
+cout << "                                       █   ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl; 
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                   ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
         }
 
         else if (loseAttempt == 2) {                              
-cout << "                                 ▄                                   ▄                                    " << endl;
-cout << "                               ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
-cout << "                                 █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
-cout << "                                 ▄▄                                  ▄▄                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl;
-cout << "                               ▄████▄                                ██                                   " << endl;
-cout << "                               ██  ██                                ██                                   " << endl;
-cout << "                               ▀████▀                                ██                                   " << endl;
-cout << "                                 ▄▄                                  ▄▄                                   " << endl;
-cout << "                               █ ██ █                                ██                                   " << endl;
-cout << "                              █  ██  █                               ██                                   " << endl;
-cout << "                             █   ██   █                              ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl; 
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "         ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
+cout << "                                           ▄                                   ▄                                    " << endl;
+cout << "                                         ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                                           █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;
+cout << "                                         ▄████▄                                ██                                   " << endl;
+cout << "                                         ██  ██                                ██                                   " << endl;
+cout << "                                         ▀████▀                                ██                                   " << endl;
+cout << "                                           ▄▄                                  ▄▄                                   " << endl;
+cout << "                                         █ ██ █                                ██                                   " << endl;
+cout << "                                        █  ██  █                               ██                                   " << endl;
+cout << "                                       █   ██   █                              ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl; 
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                   ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
                                                                                                       
         }
 
         else if (loseAttempt == 1) {
 
-cout << "                                 ▄                                   ▄                                    " << endl;
-cout << "                               ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
-cout << "                                 █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl;
-cout << "                               ▄████▄                                ██                                   " << endl;
-cout << "                               ██  ██                                ██                                   " << endl;
-cout << "                               ▀████▀                                ██                                   " << endl;
-cout << "                                 ▄▄                                  ▄▄                                   " << endl;
-cout << "                               █ ██ █                                ██                                   " << endl;
-cout << "                              █  ██  █                               ██                                   " << endl;
-cout << "                             █   ██   █                              ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl; 
-cout << "                               █                                     ██                                   " << endl;
-cout << "                              █                                      ██                                   " << endl;
-cout << "                             █                                       ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "         ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
+cout << "                                           ▄                                   ▄                                    " << endl;
+cout << "                                         ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                                           █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;
+cout << "                                         ▄████▄                                ██                                   " << endl;
+cout << "                                         ██  ██                                ██                                   " << endl;
+cout << "                                         ▀████▀                                ██                                   " << endl;
+cout << "                                           ▄▄                                  ▄▄                                   " << endl;
+cout << "                                         █ ██ █                                ██                                   " << endl;
+cout << "                                        █  ██  █                               ██                                   " << endl;
+cout << "                                       █   ██   █                              ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl; 
+cout << "                                         █                                     ██                                   " << endl;
+cout << "                                        █                                      ██                                   " << endl;
+cout << "                                       █                                       ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                   ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
         }
 
         else if (loseAttempt == 0) {
-cout << "                                 ▄                                   ▄                                    " << endl;
-cout << "                               ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
-cout << "                                 █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ██                                  ██                                   " << endl;
-cout << "                                 ▀▀                                  ▀▀                                   " << endl;
-cout << "                               ▄████▄                                ██                                   " << endl;
-cout << "                               ██  ██                                ██                                   " << endl;
-cout << "                               ▀████▀                                ██                                   " << endl;
-cout << "                                   ▄▄                                ▄▄                                   " << endl;
-cout << "                                 █ ██ █                              ██                                   " << endl;
-cout << "                                █  ██  █                             ██                                   " << endl;
-cout << "                               █   ██   █                            ██                                   " << endl;
-cout << "                                   ▀▀                                ▀▀                                   " << endl; 
-cout << "                                 █    █                              ██                                   " << endl;
-cout << "                                █      █                             ██                                   " << endl;
-cout << "                               █        █                            ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ██                                   " << endl;
-cout << "                                                                     ▀▀                                   " << endl;
-cout << "         ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
+cout << "                                           ▄                                   ▄                                    " << endl;
+cout << "                                         ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                                           █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ██                                  ██                                   " << endl;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;
+cout << "                                         ▄████▄                                ██                                   " << endl;
+cout << "                                         ██  ██                                ██                                   " << endl;
+cout << "                                         ▀████▀                                ██                                   " << endl;
+cout << "                                             ▄▄                                ▄▄                                   " << endl;
+cout << "                                           █ ██ █                              ██                                   " << endl;
+cout << "                                          █  ██  █                             ██                                   " << endl;
+cout << "                                         █   ██   █                            ██                                   " << endl;
+cout << "                                             ▀▀                                ▀▀                                   " << endl; 
+cout << "                                           █    █                              ██                                   " << endl;
+cout << "                                          █      █                             ██                                   " << endl;
+cout << "                                         █        █                            ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ██                                   " << endl;
+cout << "                                                                               ▀▀                                   " << endl;
+cout << "                   ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀    " << endl;
         }
     }
