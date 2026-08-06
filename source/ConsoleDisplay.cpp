@@ -65,9 +65,15 @@ int ConsoleDisplay::showWelcome() {
     // Discard invalid input from the input buffer
     cin.ignore(1000,'\n');
 
-    // Display error message for invalid input
-    cout << "Sorry, choice is invalid :-(, please try again." << endl;
-
+    // Display error message for invalid input                                                                                                                           
+                                                                                                                          
+cout << " ▄█████  ▄▄▄  ▄▄▄▄  ▄▄▄▄  ▄▄ ▄▄        ▄▄▄▄ ▄▄ ▄▄  ▄▄▄  ▄▄  ▄▄▄▄ ▄▄▄▄▄   ▄▄  ▄▄▄▄   ▄▄ ▄▄  ▄▄ ▄▄ ▄▄  ▄▄▄  ▄▄    ▄▄ ▄▄▄▄  " << endl;  
+cout << " ▀▀▀▄▄▄ ██▀██ ██▄█▄ ██▄█▄ ▀███▀       ██▀▀▀ ██▄██ ██▀██ ██ ██▀▀▀ ██▄▄    ██ ███▄▄   ██ ███▄██ ██▄██ ██▀██ ██    ██ ██▀██ " << endl;  
+cout << " █████▀ ▀███▀ ██ ██ ██ ██   █    ▄    ▀████ ██ ██ ▀███▀ ██ ▀████ ██▄▄▄   ██ ▄▄██▀   ██ ██ ▀██  ▀█▀  ██▀██ ██▄▄▄ ██ ████▀ " << endl;
+cout << "                                                                                                                         " << endl;
+cout << " ▄▄▄▄  ▄▄    ▄▄▄▄▄  ▄▄▄   ▄▄▄▄ ▄▄▄▄▄   ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄    ▄▄▄   ▄▄▄▄  ▄▄▄  ▄▄ ▄▄  ▄▄                                  " << endl;
+cout << " ██▄█▀ ██    ██▄▄  ██▀██ ███▄▄ ██▄▄      ██   ██▄█▄ ▀███▀   ██▀██ ██ ▄▄ ██▀██ ██ ███▄██                                  " << endl;
+cout << " ██    ██▄▄▄ ██▄▄▄ ██▀██ ▄▄██▀ ██▄▄▄     ██   ██ ██   █     ██▀██ ▀███▀ ██▀██ ██ ██ ▀██ ▄                                " << endl;
     }  
     // Input validation for player's choice
     return choice;
@@ -135,8 +141,14 @@ cout <<"                  ██     ██ ██ ██▄▄▄ ▄▄██�
     ConsoleDisplay::drawHangman();
 
     cout << " ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄" << endl;
-    cout << "Word: " << country->getDisplayWord() << endl;                     
-    cout << "Attempts: ";
+    cout << "                                                                                                                                    " << endl;
+    cout << "██     ██  ▄▄▄  ▄▄▄▄  ▄▄▄▄    " << endl;
+    cout << "██ ▄█▄ ██ ██▀██ ██▄█▄ ██▀██ ▀ " << endl;
+    cout << " ▀██▀██▀  ▀███▀ ██ ██ ████▀ ▄ " << country->getDisplayWord() << endl;     
+    cout << "                                                                                                                                    " << endl;                
+    cout << "▄████▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄  ▄▄▄▄▄▄  ▄▄▄▄   " << endl;
+    cout << "██▄▄██   ██     ██   ██▄▄  ██▀▄▀██ ██▄█▀   ██   ███▄▄ ▀ " << endl;
+    cout << "██  ██   ██     ██   ██▄▄▄ ██   ██ ██      ██   ▄▄██▀ ▄ ";
 
     // Store number of attempts remaining
     int attempts = player->getAttemptsRemaining();
@@ -146,16 +158,26 @@ cout <<"                  ██     ██ ██ ██▄▄▄ ▄▄██�
 
     // Remaining attempts
     if (i < attempts) {
-        cout << "[*]";
+        cout << " ▄▄  ▄ ▄ ▄  ▄▄  " << endl;
+        cout << " █   ▄███▄   █  " << endl;
+        cout << " █   ▄▀█▀▄   █  " << endl;
+        cout << " █           █  " << endl;
+        cout << " ▀▀         ▀▀  " << endl;
     }
 
     // Used attempts
     else {
-        cout << "[ ]";
+    cout << " ▄▄     ▄▄ " << endl;   
+    cout << " █       █ " << endl;  
+    cout << " █       █ " << endl;  
+    cout << " █       █ " << endl;  
+    cout << " ▀▀     ▀▀ " << endl;
     }
 }
     cout << endl;
-    cout << "Guessed: ";
+    cout << " ▄████  ▄▄ ▄▄ ▄▄▄▄▄  ▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄      " << endl;
+    cout << "██  ▄▄▄ ██ ██ ██▄▄  ███▄▄ ███▄▄ ██▄▄  ██▀██ ▀   " << endl; 
+    cout << " ▀███▀  ▀███▀ ██▄▄▄ ▄▄██▀ ▄▄██▀ ██▄▄▄ ████▀ ▄   " << endl;
 
     // For Loop to display the letters guessed by the player
     for (char letter : player->getGuessedLetters()) {
@@ -186,16 +208,16 @@ void ConsoleDisplay::showResult() {
         cout << "                                                                                                                                    " << endl;
         cout << "      ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄                                                                                  " << endl;
         cout << "      ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀ ▀                                                                                " << endl;
-        cout << "      ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █   ▄                                                                                " << country->getDisplayWord() << endl;
+        cout << "      ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █   ▄ " << country->getDisplayWord() << endl;
         cout << "                                                                                                                                    " << endl;
         cout << "   ▄████▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄  ▄▄▄▄▄▄  ▄▄▄▄   ▄▄▄▄  ▄▄▄▄▄ ▄▄   ▄▄  ▄▄▄  ▄▄ ▄▄  ▄▄ ▄▄ ▄▄  ▄▄  ▄▄▄▄                      " << endl;   
         cout << "   ██▄▄██   ██     ██   ██▄▄  ██▀▄▀██ ██▄█▀   ██   ███▄▄   ██▄█▄ ██▄▄  ██▀▄▀██ ██▀██ ██ ███▄██ ██ ███▄██ ██ ▄▄ ▀                    " << endl;
-        cout << "   ██  ██   ██     ██   ██▄▄▄ ██   ██ ██      ██   ▄▄██▀   ██ ██ ██▄▄▄ ██   ██ ██▀██ ██ ██ ▀██ ██ ██ ▀██ ▀███▀ ▄                    " << player->getAttemptsRemaining() << endl;
+        cout << "   ██  ██   ██     ██   ██▄▄▄ ██   ██ ██      ██   ▄▄██▀   ██ ██ ██▄▄▄ ██   ██ ██▀██ ██ ██ ▀██ ██ ██ ▀██ ▀███▀ ▄" << player->getAttemptsRemaining() << endl;
         
         // Show performance screen according to the number of attempts remaining
-        cout << "    █████▄ ▄▄▄▄▄ ▄▄▄▄  ▄▄▄▄▄  ▄▄▄  ▄▄▄▄  ▄▄   ▄▄  ▄▄▄  ▄▄  ▄▄  ▄▄▄▄ ▄▄▄▄▄                                                           " << endl;
-        cout << "    ██▄▄█▀ ██▄▄  ██▄█▄ ██▄▄  ██▀██ ██▄█▄ ██▀▄▀██ ██▀██ ███▄██ ██▀▀▀ ██▄▄  ▀                                                         " << endl;
-        cout << "    ██     ██▄▄▄ ██ ██ ██    ▀███▀ ██ ██ ██   ██ ██▀██ ██ ▀██ ▀████ ██▄▄▄ ▄                                                         " << endl;
+        cout << "   █████▄ ▄▄▄▄▄ ▄▄▄▄  ▄▄▄▄▄  ▄▄▄  ▄▄▄▄  ▄▄   ▄▄  ▄▄▄  ▄▄  ▄▄  ▄▄▄▄ ▄▄▄▄▄                                                           " << endl;
+        cout << "   ██▄▄█▀ ██▄▄  ██▄█▄ ██▄▄  ██▀██ ██▄█▄ ██▀▄▀██ ██▀██ ███▄██ ██▀▀▀ ██▄▄  ▀                                                         " << endl;
+        cout << "   ██     ██▄▄▄ ██ ██ ██    ▀███▀ ██ ██ ██   ██ ██▀██ ██ ▀██ ▀████ ██▄▄▄ ▄                                                         " << endl;
 
         // Condition to display performance of the attempts remaining
         if (player->getAttemptsRemaining() >= 5) {
@@ -270,79 +292,220 @@ void ConsoleDisplay::showResult() {
 
         // drawHangman body based on the number of attempts remaining
         if (loseAttempt == 6) {
-            cout << "            +_____+" << endl;
-            cout << "            |     |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "        =================  " << endl;
+                                                                                                      
+cout << "                            ▄                                   ▄                                    " << endl;
+cout << "                          ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                            █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀" << endl;
+
         }
 
         else if (loseAttempt == 5) {
-            cout << "            +_____+" << endl;
-            cout << "            |     |" << endl;
-            cout << "            O     |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "        =================  " << endl;
+cout << "                            ▄                                   ▄                                    " << endl;
+cout << "                          ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                            █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl;
+cout << "                          ▄████▄                                ██                                   " << endl;
+cout << "                          ██  ██                                ██                                   " << endl;
+cout << "                          ▀████▀                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀" << endl;
         }
 
         else if (loseAttempt == 4) {
-            cout << "            +_____+" << endl;
-            cout << "            |     |" << endl;
-            cout << "            O     |" << endl;
-            cout << "            |     |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "        =================  " << endl;
+cout << "                            ▄                                   ▄                                    " << endl;
+cout << "                          ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                            █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl;
+cout << "                          ▄████▄                                ██                                   " << endl;
+cout << "                          ██  ██                                ██                                   " << endl;
+cout << "                          ▀████▀                                ██                                   " << endl;
+cout << "                            ██                                  ▀▀                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀" << endl;
         }
 
         else if (loseAttempt == 3) {
-            cout << "            +_____+" << endl;
-            cout << "            |     |" << endl;
-            cout << "            O     |" << endl;
-            cout << "           /|     |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "        =================  " << endl;
+                                                                                                      
+                                                                                                      
+cout << "                            ▄                                   ▄                                    " << endl;
+cout << "                          ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                            █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl;
+cout << "                          ▄████▄                                ██                                   " << endl;
+cout << "                          ██  ██                                ██                                   " << endl;
+cout << "                          ▀████▀                                ██                                   " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                          █ ██                                  ██                                   " << endl;
+cout << "                         █  ██                                  ██                                   " << endl;
+cout << "                        █   ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl; 
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀" << endl;
         }
 
-        else if (loseAttempt == 2) {
-            cout << "            +_____+" << endl;
-            cout << "            |     |" << endl;
-            cout << "            O     |" << endl;
-            cout << "           /|\\    |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "        =================  " << endl;
+        else if (loseAttempt == 2) {                              
+cout << "                            ▄                                   ▄                                    " << endl;
+cout << "                          ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                            █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl;
+cout << "                          ▄████▄                                ██                                   " << endl;
+cout << "                          ██  ██                                ██                                   " << endl;
+cout << "                          ▀████▀                                ██                                   " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                          █ ██ █                                ██                                   " << endl;
+cout << "                         █  ██  █                               ██                                   " << endl;
+cout << "                        █   ██   █                              ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl; 
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀" << endl;
+                                                                                                      
         }
 
         else if (loseAttempt == 1) {
-            cout << "            +_____+" << endl;
-            cout << "            |     |" << endl;
-            cout << "            O     |" << endl;
-            cout << "           /|\\    |" << endl;
-            cout << "           /      |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "        =================  " << endl;
+
+cout << "                            ▄                                   ▄                                    " << endl;
+cout << "                          ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                            █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl;
+cout << "                          ▄████▄                                ██                                   " << endl;
+cout << "                          ██  ██                                ██                                   " << endl;
+cout << "                          ▀████▀                                ██                                   " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                          █ ██ █                                ██                                   " << endl;
+cout << "                         █  ██  █                               ██                                   " << endl;
+cout << "                        █   ██   █                              ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl; 
+cout << "                          █                                     ▄▄                                   " << endl;
+cout << "                         █                                      ██                                   " << endl;
+cout << "                        █                                       ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀" << endl;
         }
 
         else if (loseAttempt == 0) {
-            cout << "            +_____+" << endl;
-            cout << "            |     |" << endl;
-            cout << "            O     |" << endl;
-            cout << "            /|\\   |" << endl;
-            cout << "            / \\   |" << endl;
-            cout << "                  |" << endl;
-            cout << "                  |" << endl;
-            cout << "        =================  " << endl;
+cout << "                            ▄                                   ▄                                    " << endl;
+cout << "                          ▄▄█▄▄                               ▄▄█▄▄                                  " << endl;
+cout << "                            █   ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄   █                                    " << endl;
+cout << "                            ▄▄                                  ▄▄                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ██                                  ██                                   " << endl;
+cout << "                            ▀▀                                  ▀▀                                   " << endl;
+cout << "                          ▄████▄                                ██                                   " << endl;
+cout << "                          ██  ██                                ██                                   " << endl;
+cout << "                          ▀████▀                                ██                                   " << endl;
+cout << "                              ▄▄                                ▄▄                                   " << endl;
+cout << "                            █ ██ █                              ██                                   " << endl;
+cout << "                           █  ██  █                             ██                                   " << endl;
+cout << "                          █   ██   █                            ██                                   " << endl;
+cout << "                              ▀▀                                ▀▀                                   " << endl; 
+cout << "                            █    █                              ▄▄                                   " << endl;
+cout << "                           █      █                             ██                                   " << endl;
+cout << "                          █        █                            ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "                                                                ▄▄                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ██                                   " << endl;
+cout << "                                                                ▀▀                                   " << endl;
+cout << "▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀" << endl;
         }
     }
