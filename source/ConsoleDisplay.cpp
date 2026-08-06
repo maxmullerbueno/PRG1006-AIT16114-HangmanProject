@@ -238,7 +238,7 @@ void ConsoleDisplay::showResult() {
         cout << "                                                                                                                                    " << endl;
         cout << "      ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄       " << endl;
         cout << "      ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀ ▀     " << endl;
-        cout << "      ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █   ▄     " << country->getDisplayWord() << endl;
+        cout << "      ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █   ▄     " << endl;
 
         if (country->getSelectedCountry() == "Australia") {                                                  
         cout << "▄████▄ ▄▄ ▄▄  ▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄   ▄▄▄  ▄▄    ▄▄  ▄▄▄ " << endl;        
@@ -460,6 +460,169 @@ void ConsoleDisplay::showResult() {
         cout << "                ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄   ▄▄   ▄▄  ▄▄▄   ▄▄▄▄                                                  " << endl;
         cout << "                ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀   ██ ▄ ██ ██▀██ ███▄▄ ▀                                                " << endl;
         cout << "                ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █      ▀█▀█▀  ██▀██ ▄▄██▀ ▄                                                " << country->getSelectedCountry() << endl;
+
+
+        if (country->getSelectedCountry() == "Australia") {                                                  
+        cout << "▄████▄ ▄▄ ▄▄  ▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄   ▄▄▄  ▄▄    ▄▄  ▄▄▄ " << endl;        
+        cout << "██▄▄██ ██ ██ ███▄▄   ██   ██▄█▄ ██▀██ ██    ██ ██▀██" << endl;        
+        cout << "██  ██ ▀███▀ ▄▄██▀   ██   ██ ██ ██▀██ ██▄▄▄ ██ ██▀██" << endl; 
+        }
+        else if (country->getSelectedCountry() == "Brazil"){
+        cout << "█████▄ ▄▄▄▄   ▄▄▄  ▄▄▄▄▄ ▄▄ ▄▄    " << endl;                         
+        cout << "██▄▄██ ██▄█▄ ██▀██   ▄█▀ ██ ██   " << endl;                          
+        cout << "██▄▄█▀ ██ ██ ██▀██ ▄██▄▄ ██ ██▄▄▄" << endl;                          
+        }
+        else if (country->getSelectedCountry() == "Canada"){
+        cout << "▄█████  ▄▄▄  ▄▄  ▄▄  ▄▄▄  ▄▄▄▄   ▄▄▄ " << endl;                      
+        cout << "██     ██▀██ ███▄██ ██▀██ ██▀██ ██▀██" << endl;                        
+        cout << "▀█████ ██▀██ ██ ▀██ ██▀██ ████▀ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Cambodia"){
+        cout << "▄█████  ▄▄▄  ▄▄   ▄▄ ▄▄▄▄   ▄▄▄  ▄▄▄▄  ▄▄  ▄▄▄ " << endl;                      
+        cout << "██     ██▀██ ██▀▄▀██ ██▄██ ██▀██ ██▀██ ██ ██▀██" << endl;                        
+        cout << "▀█████ ██▀██ ██   ██ ██▄█▀ ▀███▀ ████▀ ██ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "France"){
+        cout << "██████ ▄▄▄▄   ▄▄▄  ▄▄  ▄▄  ▄▄▄▄ ▄▄▄▄▄" << endl;                      
+        cout << "██▄▄   ██▄█▄ ██▀██ ███▄██ ██▀▀▀ ██▄▄ " << endl;                        
+        cout << "██     ██ ██ ██▀██ ██ ▀██ ▀████ ██▄▄▄" << endl;  
+        }
+        else if (country->getSelectedCountry() == "China"){
+        cout << "▄█████ ▄▄ ▄▄ ▄▄ ▄▄  ▄▄  ▄▄▄ " << endl;                      
+        cout << "██     ██▄██ ██ ███▄██ ██▀██" << endl;                        
+        cout << "▀█████ ██ ██ ██ ██ ▀██ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Indonesia"){
+        cout << "██ ▄▄  ▄▄ ▄▄▄▄   ▄▄▄  ▄▄  ▄▄ ▄▄▄▄▄  ▄▄▄▄ ▄▄  ▄▄▄ " << endl;                      
+        cout << "██ ███▄██ ██▀██ ██▀██ ███▄██ ██▄▄  ███▄▄ ██ ██▀██" << endl;                        
+        cout << "██ ██ ▀██ ████▀ ▀███▀ ██ ▀██ ██▄▄▄ ▄▄██▀ ██ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Colombia"){
+        cout << "▄█████  ▄▄▄  ▄▄     ▄▄▄  ▄▄   ▄▄ ▄▄▄▄  ▄▄  ▄▄▄ " << endl;                      
+        cout << "██     ██▀██ ██    ██▀██ ██▀▄▀██ ██▄██ ██ ██▀██" << endl;                        
+        cout << "▀█████ ▀███▀ ██▄▄▄ ▀███▀ ██   ██ ██▄█▀ ██ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Chile"){
+        cout << "▄█████ ▄▄ ▄▄ ▄▄ ▄▄    ▄▄▄▄▄" << endl;                      
+        cout << "██     ██▄██ ██ ██    ██▄▄ " << endl;                        
+        cout << "▀█████ ██ ██ ██ ██▄▄▄ ██▄▄▄" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Bahamas"){
+        cout << "█████▄  ▄▄▄  ▄▄ ▄▄  ▄▄▄  ▄▄   ▄▄  ▄▄▄   ▄▄▄▄" << endl;                      
+        cout << "██▄▄██ ██▀██ ██▄██ ██▀██ ██▀▄▀██ ██▀██ ███▄▄" << endl;                        
+        cout << "██▄▄█▀ ██▀██ ██ ██ ██▀██ ██   ██ ██▀██ ▄▄██▀" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Mexico"){
+        cout << "██▄  ▄██ ▄▄▄▄▄ ▄▄ ▄▄ ▄▄  ▄▄▄▄  ▄▄▄ " << endl;                      
+        cout << "██ ▀▀ ██ ██▄▄  ▀█▄█▀ ██ ██▀▀▀ ██▀██" << endl;                        
+        cout << "██    ██ ██▄▄▄ ██ ██ ██ ▀████ ▀███▀" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Germany"){
+        cout << " ▄████  ▄▄▄▄▄ ▄▄▄▄  ▄▄   ▄▄  ▄▄▄  ▄▄  ▄▄ ▄▄ ▄▄" << endl;                      
+        cout << "██  ▄▄▄ ██▄▄  ██▄█▄ ██▀▄▀██ ██▀██ ███▄██ ▀████" << endl;                        
+        cout << " ▀███▀  ██▄▄▄ ██ ██ ██   ██ ██▀██ ██ ▀██   █ " << endl;  
+        }
+        else if (country->getSelectedCountry() == "Portugal"){
+        cout << "█████▄  ▄▄▄  ▄▄▄▄  ▄▄▄▄▄▄ ▄▄ ▄▄  ▄▄▄▄  ▄▄▄  ▄▄   " << endl;                      
+        cout << "██▄▄█▀ ██▀██ ██▄█▄   ██   ██ ██ ██ ▄▄ ██▀██ ██   " << endl;                        
+        cout << "██     ▀███▀ ██ ██   ██   ▀███▀ ▀███▀ ██▀██ ██▄▄▄" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Spain"){
+        cout << "▄█████ ▄▄▄▄   ▄▄▄  ▄▄ ▄▄  ▄▄" << endl;                      
+        cout << "▀▀▀▄▄▄ ██▄█▀ ██▀██ ██ ███▄██" << endl;                        
+        cout << "█████▀ ██    ██▀██ ██ ██ ▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Uruguay"){
+        cout << "██  ██ ▄▄▄▄  ▄▄ ▄▄  ▄▄▄▄ ▄▄ ▄▄  ▄▄▄  ▄▄ ▄▄" << endl;                      
+        cout << "██  ██ ██▄█▄ ██ ██ ██ ▄▄ ██ ██ ██▀██ ▀███▀" << endl;                        
+        cout << "▀████▀ ██ ██ ▀███▀ ▀███▀ ▀███▀ ██▀██   █  " << endl;  
+        }
+        else if (country->getSelectedCountry() == "Paraguay"){
+        cout << "█████▄  ▄▄▄  ▄▄▄▄   ▄▄▄   ▄▄▄▄ ▄▄ ▄▄  ▄▄▄  ▄▄ ▄▄" << endl;                      
+        cout << "██▄▄█▀ ██▀██ ██▄█▄ ██▀██ ██ ▄▄ ██ ██ ██▀██ ▀███▀" << endl;                        
+        cout << "██     ██▀██ ██ ██ ██▀██ ▀███▀ ▀███▀ ██▀██   █  " << endl;  
+        }
+        else if (country->getSelectedCountry() == "Korea"){
+        cout << "██ ▄█▀  ▄▄▄  ▄▄▄▄  ▄▄▄▄▄  ▄▄▄ " << endl;                      
+        cout << "████   ██▀██ ██▄█▄ ██▄▄  ██▀██" << endl;                        
+        cout << "██ ▀█▄ ▀███▀ ██ ██ ██▄▄▄ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Japan"){
+        cout << "   ██  ▄▄▄  ▄▄▄▄   ▄▄▄  ▄▄  ▄▄" << endl;                      
+        cout << "   ██ ██▀██ ██▄█▀ ██▀██ ███▄██" << endl;                        
+        cout << "████▀ ██▀██ ██    ██▀██ ██ ▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Russia"){
+        cout << "█████▄  ▄▄ ▄▄  ▄▄▄▄  ▄▄▄▄ ▄▄  ▄▄▄ " << endl;                      
+        cout << "██▄▄██▄ ██ ██ ███▄▄ ███▄▄ ██ ██▀██" << endl;                        
+        cout << "██   ██ ▀███▀ ▄▄██▀ ▄▄██▀ ██ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Greece"){
+        cout << " ▄████  ▄▄▄▄  ▄▄▄▄▄ ▄▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄" << endl;                      
+        cout << "██  ▄▄▄ ██▄█▄ ██▄▄  ██▄▄  ██▀▀▀ ██▄▄ " << endl;                        
+        cout << " ▀███▀  ██ ██ ██▄▄▄ ██▄▄▄ ▀████ ██▄▄▄" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Turkey"){
+        cout << "██████ ▄▄ ▄▄ ▄▄▄▄  ▄▄ ▄▄ ▄▄▄▄▄ ▄▄ ▄▄" << endl;                      
+        cout << "  ██   ██ ██ ██▄█▄ ██▄█▀ ██▄▄  ▀███▀" << endl;                        
+        cout << "  ██   ▀███▀ ██ ██ ██ ██ ██▄▄▄   █  " << endl;  
+        }
+        else if (country->getSelectedCountry() == "Thailand"){
+        cout << "██████ ▄▄ ▄▄  ▄▄▄  ▄▄ ▄▄     ▄▄▄  ▄▄  ▄▄ ▄▄▄▄ " << endl;                      
+        cout << "  ██   ██▄██ ██▀██ ██ ██    ██▀██ ███▄██ ██▀██" << endl;                        
+        cout << "  ██   ██ ██ ██▀██ ██ ██▄▄▄ ██▀██ ██ ▀██ ████▀" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Philippines"){
+        cout << "█████▄ ▄▄ ▄▄ ▄▄ ▄▄    ▄▄ ▄▄▄▄  ▄▄▄▄  ▄▄ ▄▄  ▄▄ ▄▄▄▄▄  ▄▄▄▄" << endl;                      
+        cout << "██▄▄█▀ ██▄██ ██ ██    ██ ██▄█▀ ██▄█▀ ██ ███▄██ ██▄▄  ███▄▄" << endl;                        
+        cout << "██     ██ ██ ██ ██▄▄▄ ██ ██    ██    ██ ██ ▀██ ██▄▄▄ ▄▄██▀" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Panama"){
+        cout << "█████▄  ▄▄▄  ▄▄  ▄▄  ▄▄▄  ▄▄   ▄▄  ▄▄▄ " << endl;                      
+        cout << "██▄▄█▀ ██▀██ ███▄██ ██▀██ ██▀▄▀██ ██▀██" << endl;                        
+        cout << "██     ██▀██ ██ ▀██ ██▀██ ██   ██ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "England"){
+        cout << "██████ ▄▄  ▄▄  ▄▄▄▄ ▄▄     ▄▄▄  ▄▄  ▄▄ ▄▄▄▄ " << endl;                      
+        cout << "██▄▄   ███▄██ ██ ▄▄ ██    ██▀██ ███▄██ ██▀██" << endl;                        
+        cout << "██▄▄▄▄ ██ ▀██ ▀███▀ ██▄▄▄ ██▀██ ██ ▀██ ████▀" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Chad"){
+        cout << "▄█████ ▄▄ ▄▄  ▄▄▄  ▄▄▄▄ " << endl;                      
+        cout << "██     ██▄██ ██▀██ ██▀██" << endl;                        
+        cout << "▀█████ ██ ██ ██▀██ ████▀" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Ethiopia"){
+        cout << "██████ ▄▄▄▄▄▄ ▄▄ ▄▄ ▄▄  ▄▄▄  ▄▄▄▄  ▄▄  ▄▄▄ " << endl;                      
+        cout << "██▄▄     ██   ██▄██ ██ ██▀██ ██▄█▀ ██ ██▀██" << endl;                        
+        cout << "██▄▄▄▄   ██   ██ ██ ██ ▀███▀ ██    ██ ██▀██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Egypt"){
+        cout << "██████  ▄▄▄▄ ▄▄ ▄▄ ▄▄▄▄  ▄▄▄▄▄▄" << endl;                      
+        cout << "██▄▄   ██ ▄▄ ▀███▀ ██▄█▀   ██  " << endl;                        
+        cout << "██▄▄▄▄ ▀███▀   █   ██      ██  " << endl;  
+        }
+        else if (country->getSelectedCountry() == "Morocco"){
+        cout << "██▄  ▄██  ▄▄▄  ▄▄▄▄   ▄▄▄   ▄▄▄▄  ▄▄▄▄  ▄▄▄ " << endl;                      
+        cout << "██ ▀▀ ██ ██▀██ ██▄█▄ ██▀██ ██▀▀▀ ██▀▀▀ ██▀██" << endl;                        
+        cout << "██    ██ ▀███▀ ██ ██ ▀███▀ ▀████ ▀████ ▀███▀" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Italy"){
+        cout << "██ ▄▄▄▄▄▄  ▄▄▄  ▄▄    ▄▄ ▄▄" << endl;                      
+        cout << "██   ██   ██▀██ ██    ▀███▀" << endl;                        
+        cout << "██   ██   ██▀██ ██▄▄▄   █  " << endl;  
+        }
+        else if (country->getSelectedCountry() == "Qatar"){
+        cout << "▄█████▄  ▄▄▄  ▄▄▄▄▄▄  ▄▄▄  ▄▄▄▄ " << endl;                      
+        cout << "██ ▄ ██ ██▀██   ██   ██▀██ ██▄█▄" << endl;                        
+        cout << "▀█████▀ ██▀██   ██   ██▀██ ██ ██" << endl;  
+        }
+        else if (country->getSelectedCountry() == "Venezuela"){
+        cout << "██  ██ ▄▄▄▄▄ ▄▄  ▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄ ▄▄ ▄▄▄▄▄ ▄▄     ▄▄▄ " << endl;                      
+        cout << "██▄▄██ ██▄▄  ███▄██ ██▄▄    ▄█▀ ██ ██ ██▄▄  ██    ██▀██" << endl;                        
+        cout << " ▀██▀  ██▄▄▄ ██ ▀██ ██▄▄▄ ▄██▄▄ ▀███▀ ██▄▄▄ ██▄▄▄ ██▀█" << endl;  
+        }
+
         cout << "                                                                                                                                    " << endl;
         cout << "                                                                                                            ▄▄                      " << endl;
         cout << "      █████▄ ▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄    ▄▄    ▄▄ ▄▄  ▄▄▄▄ ▄▄ ▄▄   ▄▄  ▄▄ ▄▄▄▄▄ ▄▄ ▄▄ ▄▄▄▄▄▄   ▄▄▄▄▄▄ ▄▄ ▄▄   ▄▄ ▄▄▄▄▄  ██    " << endl;
