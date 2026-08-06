@@ -14,7 +14,7 @@ srand(time(0));
 countries = {"Australia", "Brazil", "Canada", "Cambodia", "France", "China", "Indonesia", "Colombia", 
     "Chile", "Bahamas", "Mexico", "Germany", "Portugal", "Spain", "Uruguay", "Paraguay", "Korea", "Japan", 
     "Russia", "Greece", "Turkey", "Thailand", "Philippines", "Panama", "England", "Chad", "Ethiopia", 
-    "Egypt", "Morroco", "Italy", "Qatar", "Venezuela"
+    "Egypt", "Morocco", "Italy", "Qatar", "Venezuela"
 };
 }
 
