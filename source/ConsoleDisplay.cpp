@@ -156,12 +156,12 @@ cout <<"                  ██     ██ ██ ██▄▄▄ ▄▄██�
     // Display all six attempt slots, line per line
     for (int i = 0; i < 6; i++) {
 
-    // Line 1
+    // Line 1 full attempt
     if (i < attempts) 
-        cout << " ▄▄ ▄ ▄ ▄ ▄▄  " << endl;
+        cout << " ▄▄ ▄ ▄ ▄ ▄▄  ";
     // Line 1 missing attempt
     else 
-    cout << " ▄▄     ▄▄ " << endl;   
+    cout << " ▄▄     ▄▄ ";   
     
 }
 cout << endl;
@@ -171,10 +171,10 @@ cout << endl;
 
     // Line 2 full attempt
     if (i < attempts) 
-        cout << " █  ▄███▄  █  " << endl;
+        cout << " █  ▄███▄  █  ";
     // Line 2 missing attempt
     else 
-    cout << " █       █ " << endl;  
+    cout << " █       █ ";  
     
 }
 cout << endl;
@@ -184,10 +184,10 @@ cout << endl;
 
     // Line 3 full attempt
     if (i < attempts) 
-        cout << " █  ▄▀█▀▄  █  " << endl;
+        cout << " █  ▄▀█▀▄  █  ";
     // Line 3 missing attempt
     else 
-    cout << " █       █ " << endl;   
+    cout << " █       █ ";   
     
 }
 cout << endl;
@@ -197,14 +197,12 @@ cout << endl;
 
     // Line 4 full attempt
     if (i < attempts) 
-        cout << " ▀▀       ▀▀  " << endl;
+        cout << " ▀▀       ▀▀  ";
     // Line 4 missing attempt
     else 
-    cout << " ▀▀     ▀▀ " << endl;
+    cout << " ▀▀     ▀▀ ";
 }
 cout << endl;
-
-    cout << endl;
 
     cout << " ▄████  ▄▄ ▄▄ ▄▄▄▄▄  ▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄     " << endl;
     cout << "██  ▄▄▄ ██ ██ ██▄▄  ███▄▄ ███▄▄ ██▄▄  ██▀██ ▀  " << endl; 
