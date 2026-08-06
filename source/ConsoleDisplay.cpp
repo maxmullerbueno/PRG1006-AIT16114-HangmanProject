@@ -153,10 +153,10 @@ cout <<"                  ██     ██ ██ ██▄▄▄ ▄▄██�
     // Store number of attempts remaining
     int attempts = player->getAttemptsRemaining();
 
-    // Display all six attempt slots
+    // Display all six attempt slots, line per line
     for (int i = 0; i < 6; i++) {
 
-    // Remaining attempts
+    // Line 1
     if (i < attempts) {
         cout << " ▄▄ ▄ ▄ ▄ ▄▄  " << endl;
         cout << " █  ▄███▄  █  " << endl;
@@ -172,7 +172,50 @@ cout <<"                  ██     ██ ██ ██▄▄▄ ▄▄██�
     cout << " ▀▀     ▀▀ " << endl;
     }
 }
+cout << endl;
+
+    // Display all six attempt slots, line per line
+    for (int i = 0; i < 6; i++) {
+
+    // Line 1
+    if (i < attempts) {
+        cout << " ▄▄ ▄ ▄ ▄ ▄▄  " << endl;
+        cout << " █  ▄███▄  █  " << endl;
+        cout << " █  ▄▀█▀▄  █  " << endl;
+        cout << " ▀▀       ▀▀  " << endl;
+    }
+
+    // Used attempts
+    else {
+    cout << " ▄▄     ▄▄ " << endl;   
+    cout << " █       █ " << endl;  
+    cout << " █       █ " << endl;   
+    cout << " ▀▀     ▀▀ " << endl;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     cout << endl;
+
     cout << " ▄████  ▄▄ ▄▄ ▄▄▄▄▄  ▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄     " << endl;
     cout << "██  ▄▄▄ ██ ██ ██▄▄  ███▄▄ ███▄▄ ██▄▄  ██▀██ ▀  " << endl; 
     cout << " ▀███▀  ▀███▀ ██▄▄▄ ▄▄██▀ ▄▄██▀ ██▄▄▄ ████▀ ▄  " << endl;
@@ -352,7 +395,7 @@ cout << "                                           █   ▄▄▄▄▄ ▄▄
 cout << "                                           ██                                  ██                                   " << endl;
 cout << "                                           ██                                  ██                                   " << endl;
 cout << "                                           ██                                  ██                                   " << endl;
-cout << "                                           ▀▀                                  ▀▀                                   " << endl;l;
+cout << "                                           ▀▀                                  ▀▀                                   " << endl;
 cout << "                                         ▄████▄                                ██                                   " << endl;
 cout << "                                         ██  ██                                ██                                   " << endl;
 cout << "                                         ▀████▀                                ██                                   " << endl;
