@@ -158,20 +158,18 @@ cout <<"                  ██     ██ ██ ██▄▄▄ ▄▄██�
 
     // Remaining attempts
     if (i < attempts) {
-        cout << " ▄▄  ▄ ▄ ▄  ▄▄  " << endl;
-        cout << " █   ▄███▄   █  " << endl;
-        cout << " █   ▄▀█▀▄   █  " << endl;
-        cout << " █           █  " << endl;
-        cout << " ▀▀         ▀▀  " << endl;
+        cout << " ▄▄ ▄ ▄ ▄ ▄▄  ";
+        cout << " █  ▄███▄  █  ";
+        cout << " █  ▄▀█▀▄  █  ";
+        cout << " ▀▀       ▀▀  ";
     }
 
     // Used attempts
     else {
-    cout << " ▄▄     ▄▄ " << endl;   
-    cout << " █       █ " << endl;  
-    cout << " █       █ " << endl;  
-    cout << " █       █ " << endl;  
-    cout << " ▀▀     ▀▀ " << endl;
+    cout << " ▄▄     ▄▄ ";   
+    cout << " █       █ ";  
+    cout << " █       █ ";   
+    cout << " ▀▀     ▀▀ ";
     }
 }
     cout << endl;
