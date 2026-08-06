@@ -11,7 +11,7 @@ Player* player;                                     // Pointer to the player
 public:
 ConsoleDisplay(Country* country, Player* player);   // Constructor: links the pointers to real objects
 
-int showWelcome();                                 // Displays welmcome message
+int showWelcome();                                  // Displays welmcome message
 void showInstructions();                            // Displays game instructions
 void showBoard();                                   // Displays game board
 void showResult();                                  // Display game result
