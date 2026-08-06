@@ -159,12 +159,27 @@ cout <<"                  ██     ██ ██ ██▄▄▄ ▄▄██�
     // Line 1
     if (i < attempts) {
         cout << " ▄▄ ▄ ▄ ▄ ▄▄  " << endl;
+    }
+
+    // Used attempts
+    else {
+    cout << " ▄▄     ▄▄ " << endl;   
+    }
+}
+cout << endl;
+
+    // Display all six attempt slots, line per line
+    for (int i = 0; i < 6; i++) {
+
+    // Line 1 full attempt
+    if (i < attempts) {
+        cout << " ▄▄ ▄ ▄ ▄ ▄▄  " << endl;
         cout << " █  ▄███▄  █  " << endl;
         cout << " █  ▄▀█▀▄  █  " << endl;
         cout << " ▀▀       ▀▀  " << endl;
     }
 
-    // Used attempts
+    // Line 1 missing attempts
     else {
     cout << " ▄▄     ▄▄ " << endl;   
     cout << " █       █ " << endl;  
@@ -177,42 +192,47 @@ cout << endl;
     // Display all six attempt slots, line per line
     for (int i = 0; i < 6; i++) {
 
-    // Line 1
+    // Line 2 full attempt
     if (i < attempts) {
-        cout << " ▄▄ ▄ ▄ ▄ ▄▄  " << endl;
         cout << " █  ▄███▄  █  " << endl;
+    }
+
+    // Line 2 missing attempt
+    else {
+    cout << " █       █ " << endl;  
+    }
+}
+cout << endl;
+
+    // Display all six attempt slots, line per line
+    for (int i = 0; i < 6; i++) {
+
+    // Line 3 full attempt
+    if (i < attempts) {
         cout << " █  ▄▀█▀▄  █  " << endl;
+    }
+
+    // Line 3 missing attempt
+    else {
+    cout << " █       █ " << endl;   
+    }
+}
+cout << endl;
+
+    // Display all six attempt slots, line per line
+    for (int i = 0; i < 6; i++) {
+
+    // Line 4 full attempt
+    if (i < attempts) {
         cout << " ▀▀       ▀▀  " << endl;
     }
 
-    // Used attempts
+    // Line 4 missing attempt
     else {
-    cout << " ▄▄     ▄▄ " << endl;   
-    cout << " █       █ " << endl;  
-    cout << " █       █ " << endl;   
     cout << " ▀▀     ▀▀ " << endl;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+cout << endl;
 
     cout << endl;
 
