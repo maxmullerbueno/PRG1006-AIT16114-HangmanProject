@@ -236,9 +236,9 @@ void ConsoleDisplay::showResult() {
         cout << "                                             ██   ▀████▀ ▀████▀    ▀██▀██▀  ▀████▀ ██   ██                                          " << endl;
         cout << "                                                                                                                                    " << endl;
         cout << "                                                                                                                                    " << endl;
-        cout << "      ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄                                                                                  " << endl;
-        cout << "      ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀ ▀                                                                                " << endl;
-        cout << "      ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █   ▄                                                                                " << endl;
+        cout << "      ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄    " << endl;
+        cout << "      ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀ ▀  " << endl;
+        cout << "      ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █   ▄  " << endl;
         cout << endl;
 
         showCountryArt();
@@ -251,9 +251,9 @@ void ConsoleDisplay::showResult() {
         cout << endl;
         
         // Show performance screen according to the number of attempts remaining
-        cout << "   █████▄ ▄▄▄▄▄ ▄▄▄▄  ▄▄▄▄▄  ▄▄▄  ▄▄▄▄  ▄▄   ▄▄  ▄▄▄  ▄▄  ▄▄  ▄▄▄▄ ▄▄▄▄▄                                                            " << endl;
-        cout << "   ██▄▄█▀ ██▄▄  ██▄█▄ ██▄▄  ██▀██ ██▄█▄ ██▀▄▀██ ██▀██ ███▄██ ██▀▀▀ ██▄▄  ▀                                                          " << endl;
-        cout << "   ██     ██▄▄▄ ██ ██ ██    ▀███▀ ██ ██ ██   ██ ██▀██ ██ ▀██ ▀████ ██▄▄▄ ▄                                                          " << endl;
+        cout << "   █████▄ ▄▄▄▄▄ ▄▄▄▄  ▄▄▄▄▄  ▄▄▄  ▄▄▄▄  ▄▄   ▄▄  ▄▄▄  ▄▄  ▄▄  ▄▄▄▄ ▄▄▄▄▄    " << endl;
+        cout << "   ██▄▄█▀ ██▄▄  ██▄█▄ ██▄▄  ██▀██ ██▄█▄ ██▀▄▀██ ██▀██ ███▄██ ██▀▀▀ ██▄▄  ▀  " << endl;
+        cout << "   ██     ██▄▄▄ ██ ██ ██    ▀███▀ ██ ██ ██   ██ ██▀██ ██ ▀██ ▀████ ██▄▄▄ ▄  " << endl;
 
         // Condition to display performance of the attempts remaining
         if (player->getAttemptsRemaining() >= 5) {
@@ -305,9 +305,9 @@ void ConsoleDisplay::showResult() {
 
         ConsoleDisplay::drawHangman();
         
-        cout << "                ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄   ▄▄   ▄▄  ▄▄▄   ▄▄▄▄                                                  " << endl;
-        cout << "                ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀   ██ ▄ ██ ██▀██ ███▄▄ ▀                                                " << endl;
-        cout << "                ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █      ▀█▀█▀  ██▀██ ▄▄██▀ ▄                                                " << endl;
+        cout << "                ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄   ▄▄   ▄▄  ▄▄▄   ▄▄▄▄     " << endl;
+        cout << "                ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀   ██ ▄ ██ ██▀██ ███▄▄ ▀   " << endl;
+        cout << "                ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █      ▀█▀█▀  ██▀██ ▄▄██▀ ▄   " << endl;
         cout << "                                                                                                                                    " << endl;
 
         showCountryArt();
