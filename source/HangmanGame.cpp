@@ -77,7 +77,13 @@ void HangmanGame::startGame() {
     reset();
 
     // Select a random country to start new game
-    country.selectRandomCountry();
+    try {
+        country.selectRandomCountry();
+    }
+    catch (exception& e) {
+        cout << "Error: " << e.what() << endl;
+        return;
+    }
     
     // Keep the game running until the player wins or loses
     bool play = true;

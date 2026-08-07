@@ -20,6 +20,11 @@ countries = {"Australia", "Brazil", "Canada", "Cambodia", "France", "China", "In
 
 // Pick it up one country of the list
 string Country::selectRandomCountry() {
+
+        // Throws an exception in case countries list is empty, preventing undefined behavior from rand() % 0
+        if (countries.empty()) {
+        throw NoCountriesAvailableException();
+    }
     
     // Provides a random index based of the countries vector size
     int index = rand() % countries.size();
