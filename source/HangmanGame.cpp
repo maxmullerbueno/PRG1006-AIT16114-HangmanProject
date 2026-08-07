@@ -11,7 +11,7 @@ void HangmanGame::play() {
     // Starts game and handles user input for game options
     bool userOption = true;
 
-    // Looping for the game
+    // Looping continuity for the game until the player wins or loses
     while (userOption) {
         
     // Display welcome screen and get choices for the user  
