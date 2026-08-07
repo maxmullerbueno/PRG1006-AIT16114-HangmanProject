@@ -207,7 +207,7 @@ cout << endl;
 
     cout << " ▄████  ▄▄ ▄▄ ▄▄▄▄▄  ▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄      " << endl;
     cout << "██  ▄▄▄ ██ ██ ██▄▄  ███▄▄ ███▄▄ ██▄▄  ██▀██ ▀   " << endl; 
-    cout << " ▀███▀  ▀███▀ ██▄▄▄ ▄▄██▀ ▄▄██▀ ██▄▄▄ ████▀ ▄   " << country->getDisplayWord() << endl;
+    cout << " ▀███▀  ▀███▀ ██▄▄▄ ▄▄██▀ ▄▄██▀ ██▄▄▄ ████▀ ▄   " << endl;
 
     // For Loop to display the letters guessed by the player
     for (char letter : player->getGuessedLetters()) {
