@@ -17,8 +17,8 @@ public:
 
       string selectRandomCountry();        // Selects a random country
       bool checkLetter(char);              // Checks if a guessed letters exists
-      bool isComplete();                   // Checks if the whole word has been discovered
-      string getDisplayWord();             // Returns the word to display to the player
-      string getSelectedCountry();         // Returns the selected country
+      bool isComplete() const;                   // Checks if the whole word has been discovered
+      string getDisplayWord() const;             // Returns the word to display to the player
+      string getSelectedCountry() const;         // Returns the selected country
       bool guessEntireWord(string guess);  // Guesses the whole word and checks if it is correct. Necessary as it shows in the Use Case Diagram
 };

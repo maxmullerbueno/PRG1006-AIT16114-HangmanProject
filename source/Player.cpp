@@ -9,7 +9,7 @@ void Player::addGuess(string guess)
 }
 
 // Checks if player has already guessed a letter
-bool Player::hasGuessed(string guess)
+bool Player::hasGuessed(const string& guess) const
 {
     return guessedLetters.count(tolower(guess[0])) > 0;
 }
@@ -22,13 +22,13 @@ void Player::loseAttempt()
 
 
 // Returns number of attempts remaining
-int Player::getAttemptsRemaining()
+int Player::getAttemptsRemaining() const
 {
     return attemptsRemaining;
 }
 
 // Returns letters guessed by player
-set<char> Player::getGuessedLetters() {
+const set<char> Player::getGuessedLetters() const {
     return guessedLetters;
 }
 

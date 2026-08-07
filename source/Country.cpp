@@ -48,7 +48,7 @@ bool Country::checkLetter(char letter) {
 }
 
 // Verify the whole word if discovered
-bool Country::isComplete() {
+bool Country::isComplete() const {
     // If any letter 'c' is missing out from set, isn't complete
     for (char c : selectedCountry) {
         if (discoveredLetters.count(tolower(c)) == 0) {
@@ -60,7 +60,7 @@ bool Country::isComplete() {
 }
 
 // Returns hidden word
-string Country::getDisplayWord() {
+string Country::getDisplayWord() const {
     // Initialization of displayWord as empty string
     string displayWord = "";
 
@@ -82,7 +82,7 @@ string Country::getDisplayWord() {
 } 
 
 // Returns the selected country
-string Country::getSelectedCountry() {
+string Country::getSelectedCountry() const {
     return selectedCountry;
 }
 
