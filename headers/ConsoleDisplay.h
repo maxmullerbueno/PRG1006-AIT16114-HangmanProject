@@ -16,4 +16,5 @@ void showInstructions();                            // Displays game instruction
 void showBoard();                                   // Displays game board
 void showResult();                                  // Display game result
 void drawHangman();                                 // Draws the Hangman figure
+void showCountryArt();                              // Necessary implementation funciton for printing ASCII countries
 };
