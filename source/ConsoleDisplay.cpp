@@ -213,8 +213,8 @@ cout << endl;
     for (char letter : player->getGuessedLetters()) {
     cout << letter;
     }
-    cout << endl;                  
-    cout << " ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄" << endl;
+        cout << endl;                  
+        cout << " ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄" << endl;
 }
 
 // Displays the screen result
@@ -236,9 +236,9 @@ void ConsoleDisplay::showResult() {
         cout << "                                             ██   ▀████▀ ▀████▀    ▀██▀██▀  ▀████▀ ██   ██                                          " << endl;
         cout << "                                                                                                                                    " << endl;
         cout << "                                                                                                                                    " << endl;
-        cout << "      ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄       " << endl;
-        cout << "      ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀ ▀     " << endl;
-        cout << "      ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █   ▄     " << country->getSelectedCountry() << endl;
+        cout << "      ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄                                                                                  " << endl;
+        cout << "      ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀ ▀                                                                                " << endl;
+        cout << "      ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █   ▄                                                                                " << endl;
         cout << endl;
 
         showCountryArt();
@@ -251,27 +251,33 @@ void ConsoleDisplay::showResult() {
         cout << endl;
         
         // Show performance screen according to the number of attempts remaining
-        cout << "   █████▄ ▄▄▄▄▄ ▄▄▄▄  ▄▄▄▄▄  ▄▄▄  ▄▄▄▄  ▄▄   ▄▄  ▄▄▄  ▄▄  ▄▄  ▄▄▄▄ ▄▄▄▄▄    " << endl;
-        cout << "   ██▄▄█▀ ██▄▄  ██▄█▄ ██▄▄  ██▀██ ██▄█▄ ██▀▄▀██ ██▀██ ███▄██ ██▀▀▀ ██▄▄  ▀  " << endl;
-        cout << "   ██     ██▄▄▄ ██ ██ ██    ▀███▀ ██ ██ ██   ██ ██▀██ ██ ▀██ ▀████ ██▄▄▄ ▄  " << endl;
+        cout << "   █████▄ ▄▄▄▄▄ ▄▄▄▄  ▄▄▄▄▄  ▄▄▄  ▄▄▄▄  ▄▄   ▄▄  ▄▄▄  ▄▄  ▄▄  ▄▄▄▄ ▄▄▄▄▄                                                            " << endl;
+        cout << "   ██▄▄█▀ ██▄▄  ██▄█▄ ██▄▄  ██▀██ ██▄█▄ ██▀▄▀██ ██▀██ ███▄██ ██▀▀▀ ██▄▄  ▀                                                          " << endl;
+        cout << "   ██     ██▄▄▄ ██ ██ ██    ▀███▀ ██ ██ ██   ██ ██▀██ ██ ▀██ ▀████ ██▄▄▄ ▄                                                          " << endl;
 
         // Condition to display performance of the attempts remaining
         if (player->getAttemptsRemaining() >= 5) {
-            cout << "▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄" << "  ▄           ▄   " << endl;
-            cout << "▄███▄ ▄███▄ ▄███▄ ▄███▄ ▄███▄" << "▄▀ ▀▄       ▄▀ ▀▄ " << endl;
-            cout << "▄▀█▀▄ ▄▀█▀▄ ▄▀█▀▄ ▄▀█▀▄ ▄▀█▀▄" << "      ▄▄▄▄▄       " << endl;
+            cout << endl;
+            cout << " ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ " << "   ▄           ▄   " << endl;
+            cout << " ▄███▄ ▄███▄ ▄███▄ ▄███▄ ▄███▄ " << " ▄▀ ▀▄       ▄▀ ▀▄ " << endl;
+            cout << " ▄▀█▀▄ ▄▀█▀▄ ▄▀█▀▄ ▄▀█▀▄ ▄▀█▀▄ " << "       ▄▄▄▄▄       " << endl;
+            cout << endl;
 
         }
             else if (player->getAttemptsRemaining() >= 3) {
-                cout << " ▄ ▄ ▄ " << "▀      ▀█▄ " << endl;
-                cout << " ▄███▄ " << "   ▄▄▄  ██ " << endl;
-                cout << " ▄▀█▀▄ " << "▄      ▄█▀ " << endl;
+                cout << endl;
+                cout << " ▄ ▄ ▄ " << " ▀      ▀█▄ " << endl;
+                cout << " ▄███▄ " << "    ▄▄▄  ██ " << endl;
+                cout << " ▄▀█▀▄ " << " ▄      ▄█▀ " << endl;
+                cout << endl;
 
             }
                     else {
-                        cout << "▄ ▄ ▄" << "       ▄█▀ " << endl;
-                        cout <<" ▄███▄" << " ▀ ▄▄▄ ██  " << endl;
-                        cout <<" ▄▀█▀▄" << " ▄     ▀█▄ " << endl;
+                        cout << endl;
+                        cout <<" ▄ ▄ ▄ " << "       ▄█▀ " << endl;
+                        cout <<" ▄███▄ " << " ▀ ▄▄▄ ██  " << endl;
+                        cout <<" ▄▀█▀▄ " << " ▄     ▀█▄ " << endl;
+                        cout << endl;
                     }
         cout << " ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄" << endl;
         cout << "                                                                                                                                    " << endl;
@@ -283,7 +289,6 @@ void ConsoleDisplay::showResult() {
         cout << " ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄" << endl;
 
     }
-
         // Condition in case of game over
         else {
         cout << " ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄" << endl;
@@ -302,7 +307,7 @@ void ConsoleDisplay::showResult() {
         
         cout << "                ▄█████  ▄▄▄  ▄▄ ▄▄ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄  ▄▄ ▄▄   ▄▄   ▄▄  ▄▄▄   ▄▄▄▄                                                  " << endl;
         cout << "                ██     ██▀██ ██ ██ ███▄██   ██   ██▄█▄ ▀███▀   ██ ▄ ██ ██▀██ ███▄▄ ▀                                                " << endl;
-        cout << "                ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █      ▀█▀█▀  ██▀██ ▄▄██▀ ▄  " << country->getSelectedCountry() << endl;  
+        cout << "                ▀█████ ▀███▀ ▀███▀ ██ ▀██   ██   ██ ██   █      ▀█▀█▀  ██▀██ ▄▄██▀ ▄                                                " << endl;
         cout << "                                                                                                                                    " << endl;
 
         showCountryArt();
@@ -322,7 +327,6 @@ void ConsoleDisplay::showResult() {
         cout << " ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄" << endl;
     }
 }
-
         void ConsoleDisplay::showCountryArt() {
         if (country->getSelectedCountry() == "Australia") {                                                  
         cout << "▄████▄ ▄▄ ▄▄  ▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄   ▄▄▄  ▄▄    ▄▄  ▄▄▄ " << endl;        
