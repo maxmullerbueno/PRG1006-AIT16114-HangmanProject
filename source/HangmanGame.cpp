@@ -91,10 +91,12 @@ void HangmanGame::startGame() {
         string guess;
 
         // Input a letter for player to guess                                                                    
-                                                                                     
+                
+        cout << endl;
         cout << " ██████ ▄▄  ▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄     ▄▄▄    ▄▄    ▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄    " << endl;  
         cout << " ██▄▄   ███▄██   ██   ██▄▄  ██▄█▄   ██▀██   ██    ██▄▄    ██     ██   ██▄▄  ██▄█▄ ▀ " << endl;  
         cout << " ██▄▄▄▄ ██ ▀██   ██   ██▄▄▄ ██ ██   ██▀██   ██▄▄▄ ██▄▄▄   ██     ██   ██▄▄▄ ██ ██ ▄ " << endl;
+        cout << endl;
         cin >> guess;
 
         // Clear buffer to avoid multiple inputs
@@ -103,10 +105,12 @@ void HangmanGame::startGame() {
         if (guess.length() == 1) {
             // Condition if player has already guessed this letter
             if (player.hasGuessed(guess)) {                                                                                                                               
-                                                                                                                                 
+            
+            cout << endl;
             cout << " ██     ▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄     ▄▄▄  ▄▄    ▄▄▄▄  ▄▄▄▄▄  ▄▄▄  ▄▄▄▄  ▄▄ ▄▄    ▄▄▄▄ ▄▄ ▄▄ ▄▄▄▄▄  ▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄    " << endl;
             cout << " ██     ██▄▄    ██     ██   ██▄▄  ██▄█▄   ██▀██ ██    ██▄█▄ ██▄▄  ██▀██ ██▀██ ▀███▀   ██ ▄▄ ██ ██ ██▄▄  ███▄▄ ███▄▄ ██▄▄  ██▀██   " << endl;
             cout << " ██████ ██▄▄▄   ██     ██   ██▄▄▄ ██ ██   ██▀██ ██▄▄▄ ██ ██ ██▄▄▄ ██▀██ ████▀   █     ▀███▀ ▀███▀ ██▄▄▄ ▄▄██▀ ▄▄██▀ ██▄▄▄ ████▀ ▄ " << endl;
+            cout << endl;
             continue;
             }
 
